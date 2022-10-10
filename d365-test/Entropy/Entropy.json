@@ -7,6 +7,8 @@
     "Gallery1": 5,
     "galleryTemplate1": 6,
     "Image1": 7,
+    "Jahneer_Test": 15,
+    "Label1": 16,
     "Legend1": 13,
     "NextArrow1": 9,
     "PieChart1": 12,
@@ -18,7 +20,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "10/10/2022 09:08:38",
+  "HeaderLastSavedDateTimeUTC": "10/10/2022 09:10:53",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "1a8871b3-2937-4e45-aa22-5f1288bcae4b": "\"/providers/microsoft.powerapps/apis/shared_bhn-20rewards-20api-5f783a911adcfbc875-5fd0b8579e069f9298/connections/e40f61dbe910419e9f599d06949a3252\""
@@ -62,6 +64,8 @@
     "Gallery1": 2,
     "galleryTemplate1": 3,
     "Image1": 4,
+    "Jahneer_Test": 0,
+    "Label1": 0,
     "Legend1": 10,
     "NextArrow1": 6,
     "PieChart1": 9,
