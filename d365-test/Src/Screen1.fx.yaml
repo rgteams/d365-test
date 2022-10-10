@@ -40,6 +40,7 @@ Screen1 As screen:
     "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
         Items: =BHNrewardsapi.TeamsCampaigns().result.campaigns
         Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
         TemplateSize: =Min(160, Self.Height - 60)
         X: =674
