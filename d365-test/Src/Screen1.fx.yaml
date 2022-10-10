@@ -9,7 +9,6 @@ Screen1 As screen:
 
         Title1 As label:
             Align: =Align.Center
-            Color: =RGBA(0, 0, 0, 1),RGBA(0, 255, 0, 1)
             Height: =25
             Text: ="Chart Title"
             Width: =602
@@ -18,16 +17,15 @@ Screen1 As screen:
             ZIndex: =2
 
         PieChart1 As pieChart:
-            Color: =RGBA(0, 0, 0, 1),RGBA(0, 255, 0, 1)
             Height: =350
             ItemBorderThickness: =0
             Items: =DummyDataCharts
-            Width: =602
+            Size: =16
+            Width: =642
             Y: =40
             ZIndex: =3
 
         Legend1 As legend:
-            Color: =RGBA(0, 0, 0, 1),RGBA(0, 255, 0, 1)
             Height: =72
             ItemColorSet: =PieChart1.ItemColorSet
             Items: =PieChart1.SeriesLabels
@@ -48,10 +46,10 @@ Screen1 As screen:
         ZIndex: =5
 
         Image1 As image:
-            Height: =128
+            Height: =144
             Image: =ThisItem.campaignImage
             OnSelect: =Select(Parent)
-            Width: =128
+            Width: =192
             X: =16
             Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
             ZIndex: =1
