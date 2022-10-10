@@ -1,0 +1,8 @@
+Jahneer_Test As screen:
+
+    Label1 As label:
+        Text: ="This is working"
+        X: =597
+        Y: =348
+        ZIndex: =1
+

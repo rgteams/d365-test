@@ -1,97 +1,23 @@
 {
   "ComponentIndexes": {},
   "ControlUniqueGuids": {},
-  "ControlUniqueIds": {
-    "App": 1,
-    "CompositePieChart1": 14,
-    "Gallery1": 5,
-    "galleryTemplate1": 6,
-    "Image1": 7,
-    "Legend1": 13,
-    "NextArrow1": 9,
-    "PieChart1": 12,
-    "Screen1": 3,
-    "Separator1": 11,
-    "Subtitle1": 10,
-    "Title1": 4,
-    "Title2": 8
-  },
+  "ControlUniqueIds": {},
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "10/10/2022 09:12:13",
   "IsLegacyComponentAllowGlobalScopeCase": false,
-  "LocalConnectionIDReferences": {
-    "1a8871b3-2937-4e45-aa22-5f1288bcae4b": "\"/providers/microsoft.powerapps/apis/shared_bhn-20rewards-20api-5f783a911adcfbc875-5fd0b8579e069f9298/connections/3f0c3a9220eb4f8c975abe75b80df525\""
-  },
+  "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {},
   "LocalResourceRootPaths": {},
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
-  "OrderDataSource": {
-    "BHNrewardsapi": 0,
-    "CustomGallerySample": 4,
-    "DummyDataCharts": 7,
-    "DummyDataCharts\\cr533_dummydatachart_statecode": 1,
-    "DummyDataCharts\\cr533_dummydatachart_statuscode": 2,
-    "DummyDataCharts\\default.cds_cr533_dummydatachart_views": 3,
-    "LegendSample": 5,
-    "PieChartSample": 6
-  },
-  "OrderGroupControls": {
-    "CompositePieChart1": {
-      "Legend1": 2,
-      "PieChart1": 1,
-      "Title1": 0
-    }
-  },
+  "OrderDataSource": {},
+  "OrderGroupControls": {},
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
-  "OrderXMLTemplate": {
-    "gallery": 1,
-    "icon": 3,
-    "image": 2,
-    "label": 0,
-    "legend": 6,
-    "pieChart": 5,
-    "rectangle": 4
-  },
-  "PublishOrderIndices": {
-    "App": 0,
-    "CompositePieChart1": 7,
-    "Gallery1": 4,
-    "galleryTemplate1": 8,
-    "Image1": 9,
-    "Legend1": 6,
-    "NextArrow1": 11,
-    "PieChart1": 5,
-    "Screen1": 2,
-    "Separator1": 13,
-    "Subtitle1": 12,
-    "Title1": 3,
-    "Title2": 10
-  },
-  "ResourcesJsonIndices": {
-    "Image-SampleImage": 0
-  },
+  "OrderXMLTemplate": {},
+  "PublishOrderIndices": {},
+  "ResourcesJsonIndices": {},
   "RuleScreenIdWithoutScreen": {},
-  "TemplateVersions": {},
-  "VolatileProperties": {
-    "AnalysisLoadTime": 0.1046428,
-    "ControlCount": {
-      "gallery": 1,
-      "galleryTemplate": 1,
-      "group": 1,
-      "icon": 1,
-      "image": 1,
-      "label": 3,
-      "legend": 1,
-      "pieChart": 1,
-      "rectangle": 1,
-      "screen": 1
-    },
-    "DeserializationLoadTime": 0.7506221,
-    "ErrorCount": 3
-  },
-  "WasLocalDatabaseReferencesEmpty": false
+  "TemplateVersions": {}
 }
