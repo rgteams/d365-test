@@ -1,23 +1,101 @@
 {
   "ComponentIndexes": {},
   "ControlUniqueGuids": {},
-  "ControlUniqueIds": {},
+  "ControlUniqueIds": {
+    "App": 1,
+    "CompositePieChart1": 16,
+    "Gallery1": 7,
+    "galleryTemplate1": 8,
+    "Image1": 9,
+    "Jahneer_Test": 3,
+    "Label1": 4,
+    "Legend1": 15,
+    "NextArrow1": 11,
+    "PieChart1": 14,
+    "Screen1": 5,
+    "Separator1": 13,
+    "Subtitle1": 12,
+    "Title1": 6,
+    "Title2": 10
+  },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
+  "HeaderLastSavedDateTimeUTC": "10/10/2022 09:11:35",
   "IsLegacyComponentAllowGlobalScopeCase": false,
-  "LocalConnectionIDReferences": {},
+  "LocalConnectionIDReferences": {
+    "1a8871b3-2937-4e45-aa22-5f1288bcae4b": "\"/providers/microsoft.powerapps/apis/shared_bhn-20rewards-20api-5f783a911adcfbc875-5fd0b8579e069f9298/connections/e40f61dbe910419e9f599d06949a3252\""
+  },
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {},
   "LocalResourceRootPaths": {},
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
-  "OrderDataSource": {},
-  "OrderGroupControls": {},
+  "OrderDataSource": {
+    "BHNrewardsapi": 0,
+    "CustomGallerySample": 4,
+    "DummyDataCharts": 7,
+    "DummyDataCharts\\cr533_dummydatachart_statecode": 1,
+    "DummyDataCharts\\cr533_dummydatachart_statuscode": 2,
+    "DummyDataCharts\\default.cds_cr533_dummydatachart_views": 3,
+    "LegendSample": 5,
+    "PieChartSample": 6
+  },
+  "OrderGroupControls": {
+    "CompositePieChart1": {
+      "Legend1": 2,
+      "PieChart1": 1,
+      "Title1": 0
+    }
+  },
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
-  "OrderXMLTemplate": {},
-  "PublishOrderIndices": {},
-  "ResourcesJsonIndices": {},
+  "OrderXMLTemplate": {
+    "gallery": 1,
+    "icon": 3,
+    "image": 2,
+    "label": 0,
+    "legend": 6,
+    "pieChart": 5,
+    "rectangle": 4
+  },
+  "PublishOrderIndices": {
+    "App": 0,
+    "CompositePieChart1": 9,
+    "Gallery1": 6,
+    "galleryTemplate1": 10,
+    "Image1": 11,
+    "Jahneer_Test": 2,
+    "Label1": 3,
+    "Legend1": 8,
+    "NextArrow1": 13,
+    "PieChart1": 7,
+    "Screen1": 4,
+    "Separator1": 15,
+    "Subtitle1": 14,
+    "Title1": 5,
+    "Title2": 12
+  },
+  "ResourcesJsonIndices": {
+    "Image-SampleImage": 0
+  },
   "RuleScreenIdWithoutScreen": {},
-  "TemplateVersions": {}
+  "TemplateVersions": {},
+  "VolatileProperties": {
+    "AnalysisLoadTime": 0.0868261,
+    "ControlCount": {
+      "gallery": 1,
+      "galleryTemplate": 1,
+      "group": 1,
+      "icon": 1,
+      "image": 1,
+      "label": 4,
+      "legend": 1,
+      "pieChart": 1,
+      "rectangle": 1,
+      "screen": 2
+    },
+    "DeserializationLoadTime": 0.6976418,
+    "ErrorCount": 3
+  },
+  "WasLocalDatabaseReferencesEmpty": false
 }
