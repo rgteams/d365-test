@@ -19,15 +19,16 @@ Screen1 As screen:
 
         PieChart1 As pieChart:
             Color: =RGBA(0, 0, 0, 1),RGBA(0, 255, 0, 1)
+            Height: =350
+            ItemBorderThickness: =0
             Items: =DummyDataCharts
             Width: =602
-            X: =40
-            Y: =132
+            Y: =40
             ZIndex: =3
 
         Legend1 As legend:
             Color: =RGBA(0, 0, 0, 1),RGBA(0, 255, 0, 1)
-            Height: =200
+            Height: =72
             ItemColorSet: =PieChart1.ItemColorSet
             Items: =PieChart1.SeriesLabels
             Size: =16
