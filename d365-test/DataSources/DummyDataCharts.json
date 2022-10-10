@@ -1,0 +1,96 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr533_dummydatacharts",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr533_dummydatachart",
+    "MaxGetRowsCount": 500,
+    "Name": "DummyDataCharts",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr533_dummydatachart_AsyncOperations": "System Jobs",
+      "cr533_dummydatachart_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr533_dummydatachart_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr533_dummydatachart_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr533_dummydatachart_ProcessSession": "Process Sessions",
+      "cr533_dummydatachart_SyncErrors": "Sync Errors",
+      "cr533_dummydatachartid": "DummyDataChart",
+      "cr533_name": "Name",
+      "cr533_rewardcount": "Reward count",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "DummyDataCharts",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "DummyDataCharts (Views)",
+    "Name": "_cr533_dummydatachart_views",
+    "RelatedEntityName": "DummyDataCharts",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "248ad0de-7556-4369-8c40-10b1261ed29f": "DummyDataChart Lookup View",
+      "538c3325-059a-43ff-aa0b-d6f69d85e662": "Active DummyDataCharts",
+      "6ad873d6-3a8d-45db-b22f-90ddead69c06": "DummyDataChart Associated View",
+      "8f1d0f98-b4f3-4d8c-a2b9-0be6a9bf2836": "Inactive DummyDataCharts",
+      "a5b9913a-9684-4f95-8dfa-d81e4e9b7885": "DummyDataChart Advanced Find View"
+    }
+  },
+  {
+    "DisplayName": "Status (DummyDataCharts)",
+    "Name": "cr533_dummydatachart_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "DummyDataCharts"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "DummyDataCharts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (DummyDataCharts)",
+    "Name": "cr533_dummydatachart_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "DummyDataCharts"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "DummyDataCharts",
+    "Type": "OptionSetInfo"
+  }
+]

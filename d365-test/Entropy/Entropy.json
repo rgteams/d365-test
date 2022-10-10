@@ -1,0 +1,97 @@
+{
+  "ComponentIndexes": {},
+  "ControlUniqueGuids": {},
+  "ControlUniqueIds": {
+    "App": 1,
+    "CompositePieChart1": 14,
+    "Gallery1": 5,
+    "galleryTemplate1": 6,
+    "Image1": 7,
+    "Legend1": 13,
+    "NextArrow1": 9,
+    "PieChart1": 12,
+    "Screen1": 3,
+    "Separator1": 11,
+    "Subtitle1": 10,
+    "Title1": 4,
+    "Title2": 8
+  },
+  "FunctionParamsInvariantScripts": {},
+  "FunctionParamsInvariantScriptsOnInstances": {},
+  "HeaderLastSavedDateTimeUTC": "10/10/2022 09:06:35",
+  "IsLegacyComponentAllowGlobalScopeCase": false,
+  "LocalConnectionIDReferences": {
+    "1a8871b3-2937-4e45-aa22-5f1288bcae4b": "\"/providers/microsoft.powerapps/apis/shared_bhn-20rewards-20api-5f783a911adcfbc875-5fd0b8579e069f9298/connections/e40f61dbe910419e9f599d06949a3252\""
+  },
+  "LocalDatabaseReferencesAsEmpty": false,
+  "LocalResourceFileNames": {},
+  "LocalResourceRootPaths": {},
+  "OrderComponentMetadata": {},
+  "OrderComponentTemplate": {},
+  "OrderDataSource": {
+    "BHNrewardsapi": 0,
+    "CustomGallerySample": 4,
+    "DummyDataCharts": 6,
+    "DummyDataCharts\\cr533_dummydatachart_statecode": 1,
+    "DummyDataCharts\\cr533_dummydatachart_statuscode": 2,
+    "DummyDataCharts\\default.cds_cr533_dummydatachart_views": 3,
+    "LegendSample": 7,
+    "PieChartSample": 5
+  },
+  "OrderGroupControls": {
+    "CompositePieChart1": {
+      "Legend1": 2,
+      "PieChart1": 1,
+      "Title1": 0
+    }
+  },
+  "OrderPcfTemplate": {},
+  "OrderTemplate": {},
+  "OrderXMLTemplate": {
+    "gallery": 1,
+    "icon": 3,
+    "image": 2,
+    "label": 0,
+    "legend": 6,
+    "pieChart": 5,
+    "rectangle": 4
+  },
+  "PublishOrderIndices": {
+    "App": 0,
+    "CompositePieChart1": 0,
+    "Gallery1": 2,
+    "galleryTemplate1": 3,
+    "Image1": 4,
+    "Legend1": 10,
+    "NextArrow1": 6,
+    "PieChart1": 9,
+    "Screen1": 0,
+    "Separator1": 8,
+    "Subtitle1": 7,
+    "Title1": 1,
+    "Title2": 5
+  },
+  "ResourcesJsonIndices": {
+    "Image-SampleImage": 0
+  },
+  "RuleScreenIdWithoutScreen": {},
+  "TemplateVersions": {},
+  "VolatileProperties": {
+    "AnalysisLoadTime": 0.1772216,
+    "ControlCount": {
+      "gallery": 1,
+      "galleryTemplate": 1,
+      "group": 1,
+      "icon": 1,
+      "image": 1,
+      "label": 3,
+      "legend": 1,
+      "pieChart": 1,
+      "rectangle": 1,
+      "screen": 1
+    },
+    "DeserializationLoadTime": 0.9521395,
+    "ErrorCount": 3
+  },
+  "WasLocalDatabaseReferencesEmpty": false
+}
