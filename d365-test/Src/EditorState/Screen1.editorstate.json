@@ -1248,12 +1248,19 @@
         "DisabledBorderColor",
         "PressedBorderColor",
         "HoverBorderColor",
-        "Color",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Color",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "BorderColor",
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "BorderStyle.Solid",
+          "AutoRuleBindingString": "",
           "InvariantPropertyName": "BorderStyle",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
@@ -1280,7 +1287,14 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "BorderThickness",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "BorderThickness",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -1304,6 +1318,14 @@
           "InvariantPropertyName": "ContentLanguage",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "ShowLabels",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
         }
       ],
       "HasDynamicProperties": false,
@@ -1321,7 +1343,7 @@
       "Properties": [
         {
           "Category": "Data",
-          "NameMap": "{\"Labels\":\"campaignName\",\"Series\":\"rewardPrice\"}",
+          "NameMap": "{\"Labels\":\"campaignName\",\"Series\":\"budgetRemaining\"}",
           "PropertyName": "Items",
           "RuleProviderType": "Unknown"
         },
@@ -1428,6 +1450,11 @@
         {
           "Category": "Design",
           "PropertyName": "Visible",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "ShowLabels",
           "RuleProviderType": "Unknown"
         }
       ],
