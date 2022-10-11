@@ -24,7 +24,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "10/11/2022 05:18:04",
+  "HeaderLastSavedDateTimeUTC": "10/11/2022 05:24:01",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "1a8871b3-2937-4e45-aa22-5f1288bcae4b": "\"/providers/microsoft.powerapps/apis/shared_bhn-20rewards-20api-5f783a911adcfbc875-5fd0b8579e069f9298/connections/3f0c3a9220eb4f8c975abe75b80df525\""
@@ -69,7 +69,7 @@
   },
   "PublishOrderIndices": {
     "App": 0,
-    "CompositePieChart1": 11,
+    "CompositePieChart1": 10,
     "CompositePieChart2": 0,
     "Gallery1": 3,
     "galleryTemplate1": 4,
@@ -79,7 +79,7 @@
     "Legend1": 14,
     "Legend2": 13,
     "NextArrow2": 7,
-    "PieChart1": 10,
+    "PieChart1": 11,
     "PieChart2": 2,
     "Screen1": 4,
     "Separator2": 9,
@@ -94,7 +94,7 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.1597441,
+    "AnalysisLoadTime": 0.1870604,
     "ControlCount": {
       "gallery": 1,
       "galleryTemplate": 1,
@@ -107,7 +107,7 @@
       "rectangle": 1,
       "screen": 2
     },
-    "DeserializationLoadTime": 2.1041573,
+    "DeserializationLoadTime": 2.3368163,
     "ErrorCount": 0
   },
   "WasLocalDatabaseReferencesEmpty": false
