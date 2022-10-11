@@ -131,6 +131,7 @@ Screen1 As screen:
             ZIndex: =6
 
         PieChart2 As pieChart:
+            ContentLanguage: ="en"
             Height: =434
             ItemBorderColor: =RGBA(0, 0, 0, 0)
             ItemBorderThickness: =0

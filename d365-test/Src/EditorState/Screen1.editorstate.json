@@ -1296,6 +1296,14 @@
           "InvariantPropertyName": "Visible",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "\"\"",
+          "InvariantPropertyName": "ContentLanguage",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
         }
       ],
       "HasDynamicProperties": false,
@@ -1313,8 +1321,13 @@
       "Properties": [
         {
           "Category": "Data",
-          "NameMap": "{\"Labels\":\"campaignName\",\"Series\":\"campaignRewardValue\"}",
+          "NameMap": "{\"Labels\":\"campaignName\",\"Series\":\"rewardPrice\"}",
           "PropertyName": "Items",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "ContentLanguage",
           "RuleProviderType": "Unknown"
         },
         {
