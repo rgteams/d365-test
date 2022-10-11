@@ -132,8 +132,11 @@ Screen1 As screen:
 
         PieChart2 As pieChart:
             Height: =434
+            ItemBorderColor: =RGBA(0, 0, 0, 0)
+            ItemBorderThickness: =0
             ItemColorSet: =[RGBA(60, 157, 78, 1),RGBA(112, 49, 172, 1), RGBA(201, 77, 109,1), RGBA(228, 191, 88,1), RGBA(65, 116, 201,1), RGBA(247,180,91,1), RGBA(246,143,100,1), RGBA(212,96,104,1), RGBA(148, 110, 176, 1), RGBA(118, 154, 204, 1), RGBA(96, 197, 234, 1)]
             Items: =BHNrewardsapi.TeamsCampaigns().result.campaigns
+            LabelPosition: =LabelPosition.Inside
             Size: =16
             Width: =414
             X: =899
