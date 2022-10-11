@@ -1,0 +1,588 @@
+<application xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:service="https://unitedstates-002.azure-apim.net/apim/bhn-20rewards-20api-5f783a911adcfbc875-5fd0b8579e069f9298" xmlns:siena="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11" siena:serviceId="BHNrewardsapi" xmlns="http://wadl.dev.java.net/2009/02">
+  <doc title="BHN rewards api"></doc>
+  <grammars>
+    <jsonTypes targetNamespace="https://unitedstates-002.azure-apim.net/apim/bhn-20rewards-20api-5f783a911adcfbc875-5fd0b8579e069f9298" xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+      <string name="ListCampaigns_responses_default_def_result_def_campaigns_def_items_def_campaignName_def" />
+      <string name="ListCampaigns_responses_default_def_result_def_campaigns_def_items_def_campaignKey_def" />
+      <string name="ListCampaigns_responses_default_def_result_def_campaigns_def_items_def_campaignStatus_def" />
+      <string name="ListCampaigns_responses_default_def_result_def_campaigns_def_items_def_campaignType_def" />
+      <string name="ListCampaigns_responses_default_def_result_def_campaigns_def_items_def_deliveryType_def" />
+      <integer name="ListCampaigns_responses_default_def_result_def_campaigns_def_items_def_totalRecipients_def" />
+      <integer name="ListCampaigns_responses_default_def_result_def_campaigns_def_items_def_totalClaimed_def" />
+      <integer name="ListCampaigns_responses_default_def_result_def_campaigns_def_items_def_pendingClaims_def" />
+      <integer name="ListCampaigns_responses_default_def_result_def_campaigns_def_items_def_pendingPayments_def" />
+      <integer name="ListCampaigns_responses_default_def_result_def_campaigns_def_items_def_expiredRewards_def" />
+      <integer name="ListCampaigns_responses_default_def_result_def_campaigns_def_items_def_availableRewards_def" />
+      <integer name="ListCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardValue_def" />
+      <string name="ListCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCurrency_def" />
+      <string name="ListCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardImage_def" />
+      <integer name="ListCampaigns_responses_default_def_result_def_campaigns_def_items_def_claimWindow_def" />
+      <string name="ListCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewards_def_items_def_name_def" />
+      <integer name="ListCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewards_def_items_def_value_def" />
+      <string name="ListCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewards_def_items_def_currency_def" />
+      <string name="ListCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewards_def_items_def_imageUrl_def" />
+      <object name="ListCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewards_def_items_def">
+        <property name="name" type="string" />
+        <property name="value" type="integer" />
+        <property name="currency" type="string" />
+        <property name="imageUrl" type="string" />
+      </object>
+      <array typeRef="ListCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewards_def_items_def" name="ListCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewards_def" />
+      <object name="ListCampaigns_responses_default_def_result_def_campaigns_def_items_def">
+        <property name="campaignName" type="string" />
+        <property name="campaignKey" type="string" />
+        <property name="campaignStatus" type="string" />
+        <property name="campaignType" type="string" />
+        <property name="deliveryType" type="string" />
+        <property name="totalRecipients" type="integer" />
+        <property name="totalClaimed" type="integer" />
+        <property name="pendingClaims" type="integer" />
+        <property name="pendingPayments" type="integer" />
+        <property name="expiredRewards" type="integer" />
+        <property name="availableRewards" type="integer" />
+        <property name="rewardValue" type="integer" />
+        <property name="rewardCurrency" type="string" />
+        <property name="rewardImage" type="string" />
+        <property name="claimWindow" type="integer" />
+        <property name="rewards" typeRef="ListCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewards_def" />
+      </object>
+      <array typeRef="ListCampaigns_responses_default_def_result_def_campaigns_def_items_def" name="ListCampaigns_responses_default_def_result_def_campaigns_def" />
+      <integer name="ListCampaigns_responses_default_def_result_def_totalRecords_def" />
+      <integer name="ListCampaigns_responses_default_def_result_def_start_def" />
+      <integer name="ListCampaigns_responses_default_def_result_def_limit_def" />
+      <object name="ListCampaigns_responses_default_def_result_def">
+        <property name="campaigns" typeRef="ListCampaigns_responses_default_def_result_def_campaigns_def" />
+        <property name="totalRecords" type="integer" />
+        <property name="start" type="integer" />
+        <property name="limit" type="integer" />
+      </object>
+      <boolean name="ListCampaigns_responses_default_def_success_def" />
+      <object name="ListCampaigns_responses_default_def">
+        <property name="result" typeRef="ListCampaigns_responses_default_def_result_def" />
+        <property name="success" type="boolean" />
+      </object>
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_campaignName_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_campaignKey_def" />
+      <boolean name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_useSenderBudget_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_type_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def__ux24_schema_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_version_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_id_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_type_def" />
+      <boolean name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_bleed_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_items_def_items_def_url_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_items_def_items_def_size_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_items_def_items_def_type_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_items_def_items_def_spacing_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_items_def_items_def_columns_def_items_def_type_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_items_def_items_def_columns_def_items_def_width_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_items_def_items_def_columns_def_items_def_items_def_items_def_horizontalAlignment_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_items_def_items_def_columns_def_items_def_items_def_items_def_type_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_items_def_items_def_columns_def_items_def_items_def_items_def_url_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_items_def_items_def_columns_def_items_def_items_def_items_def__ux24_when_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_items_def_items_def_columns_def_items_def_items_def_items_def_style_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_items_def_items_def_columns_def_items_def_items_def_items_def_id_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_items_def_items_def_columns_def_items_def_items_def_items_def_size_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_items_def_items_def_columns_def_items_def_items_def_items_def_text_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_items_def_items_def_columns_def_items_def_items_def_items_def_weight_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_items_def_items_def_columns_def_items_def_items_def_items_def_height_def" />
+      <boolean name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_items_def_items_def_columns_def_items_def_items_def_items_def_wrap_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_items_def_items_def_columns_def_items_def_items_def_items_def_spacing_def" />
+      <object name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_items_def_items_def_columns_def_items_def_items_def_items_def">
+        <property name="horizontalAlignment" type="string" />
+        <property name="type" type="string" />
+        <property name="url" type="string" />
+        <property name="$when" type="string" />
+        <property name="style" type="string" />
+        <property name="id" type="string" />
+        <property name="size" type="string" />
+        <property name="text" type="string" />
+        <property name="weight" type="string" />
+        <property name="height" type="string" />
+        <property name="wrap" type="boolean" />
+        <property name="spacing" type="string" />
+      </object>
+      <array typeRef="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_items_def_items_def_columns_def_items_def_items_def_items_def" name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_items_def_items_def_columns_def_items_def_items_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_items_def_items_def_columns_def_items_def_horizontalAlignment_def" />
+      <object name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_items_def_items_def_columns_def_items_def">
+        <property name="type" type="string" />
+        <property name="width" type="string" />
+        <property name="items" typeRef="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_items_def_items_def_columns_def_items_def_items_def" />
+        <property name="horizontalAlignment" type="string" />
+      </object>
+      <array typeRef="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_items_def_items_def_columns_def_items_def" name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_items_def_items_def_columns_def" />
+      <object name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_items_def_items_def">
+        <property name="url" type="string" />
+        <property name="size" type="string" />
+        <property name="type" type="string" />
+        <property name="spacing" type="string" />
+        <property name="columns" typeRef="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_items_def_items_def_columns_def" />
+      </object>
+      <array typeRef="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_items_def_items_def" name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_items_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_style_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_height_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_minHeight_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_url_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_size_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_horizontalAlignment_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def__ux24_when_def" />
+      <boolean name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_wrap_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_color_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_weight_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_text_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_spacing_def" />
+      <boolean name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_isSubtle_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_verticalContentAlignment_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_columns_def_items_def_type_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_columns_def_items_def_items_def_items_def_type_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_columns_def_items_def_items_def_items_def_actions_def_items_def_type_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_columns_def_items_def_items_def_items_def_actions_def_items_def_url_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_columns_def_items_def_items_def_items_def_actions_def_items_def_style_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_columns_def_items_def_items_def_items_def_actions_def_items_def_title_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_columns_def_items_def_items_def_items_def_actions_def_items_def_iconUrl_def" />
+      <object name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_columns_def_items_def_items_def_items_def_actions_def_items_def">
+        <property name="type" type="string" />
+        <property name="url" type="string" />
+        <property name="style" type="string" />
+        <property name="title" type="string" />
+        <property name="iconUrl" type="string" />
+      </object>
+      <array typeRef="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_columns_def_items_def_items_def_items_def_actions_def_items_def" name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_columns_def_items_def_items_def_items_def_actions_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_columns_def_items_def_items_def_items_def_horizontalAlignment_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_columns_def_items_def_items_def_items_def_spacing_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_columns_def_items_def_items_def_items_def_text_def" />
+      <boolean name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_columns_def_items_def_items_def_items_def_wrap_def" />
+      <boolean name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_columns_def_items_def_items_def_items_def_isSubtle_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_columns_def_items_def_items_def_items_def_weight_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_columns_def_items_def_items_def_items_def_size_def" />
+      <object name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_columns_def_items_def_items_def_items_def">
+        <property name="type" type="string" />
+        <property name="actions" typeRef="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_columns_def_items_def_items_def_items_def_actions_def" />
+        <property name="horizontalAlignment" type="string" />
+        <property name="spacing" type="string" />
+        <property name="text" type="string" />
+        <property name="wrap" type="boolean" />
+        <property name="isSubtle" type="boolean" />
+        <property name="weight" type="string" />
+        <property name="size" type="string" />
+      </object>
+      <array typeRef="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_columns_def_items_def_items_def_items_def" name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_columns_def_items_def_items_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_columns_def_items_def_width_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_columns_def_items_def_horizontalAlignment_def" />
+      <object name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_columns_def_items_def">
+        <property name="type" type="string" />
+        <property name="items" typeRef="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_columns_def_items_def_items_def" />
+        <property name="width" type="string" />
+        <property name="horizontalAlignment" type="string" />
+      </object>
+      <array typeRef="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_columns_def_items_def" name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_columns_def" />
+      <object name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def">
+        <property name="id" type="string" />
+        <property name="type" type="string" />
+        <property name="bleed" type="boolean" />
+        <property name="items" typeRef="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_items_def" />
+        <property name="style" type="string" />
+        <property name="height" type="string" />
+        <property name="minHeight" type="string" />
+        <property name="url" type="string" />
+        <property name="size" type="string" />
+        <property name="horizontalAlignment" type="string" />
+        <property name="$when" type="string" />
+        <property name="wrap" type="boolean" />
+        <property name="color" type="string" />
+        <property name="weight" type="string" />
+        <property name="text" type="string" />
+        <property name="spacing" type="string" />
+        <property name="isSubtle" type="boolean" />
+        <property name="verticalContentAlignment" type="string" />
+        <property name="columns" typeRef="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def_columns_def" />
+      </object>
+      <array typeRef="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def_items_def" name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_verticalContentAlignment_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_minHeight_def" />
+      <object name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_msteams_def" />
+      <object name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def">
+        <property name="type" type="string" />
+        <property name="$schema" type="string" />
+        <property name="version" type="string" />
+        <property name="body" typeRef="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_body_def" />
+        <property name="verticalContentAlignment" type="string" />
+        <property name="minHeight" type="string" />
+        <property name="msteams" typeRef="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def_msteams_def" />
+      </object>
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def_items_def_id_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def_items_def_type_def" />
+      <boolean name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def_items_def_bleed_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_url_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_size_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_type_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_spacing_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_columns_def_items_def_type_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_columns_def_items_def_items_def_items_def_id_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_columns_def_items_def_items_def_items_def_url_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_columns_def_items_def_items_def_items_def_size_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_columns_def_items_def_items_def_items_def_type_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_columns_def_items_def_items_def_items_def__ux24_when_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_columns_def_items_def_items_def_items_def_style_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_columns_def_items_def_items_def_items_def_horizontalAlignment_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_columns_def_items_def_items_def_items_def_text_def" />
+      <boolean name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_columns_def_items_def_items_def_items_def_wrap_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_columns_def_items_def_items_def_items_def_height_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_columns_def_items_def_items_def_items_def_weight_def" />
+      <object name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_columns_def_items_def_items_def_items_def">
+        <property name="id" type="string" />
+        <property name="url" type="string" />
+        <property name="size" type="string" />
+        <property name="type" type="string" />
+        <property name="$when" type="string" />
+        <property name="style" type="string" />
+        <property name="horizontalAlignment" type="string" />
+        <property name="text" type="string" />
+        <property name="wrap" type="boolean" />
+        <property name="height" type="string" />
+        <property name="weight" type="string" />
+      </object>
+      <array typeRef="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_columns_def_items_def_items_def_items_def" name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_columns_def_items_def_items_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_columns_def_items_def_style_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_columns_def_items_def_width_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_columns_def_items_def_horizontalAlignment_def" />
+      <object name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_columns_def_items_def">
+        <property name="type" type="string" />
+        <property name="items" typeRef="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_columns_def_items_def_items_def" />
+        <property name="style" type="string" />
+        <property name="width" type="string" />
+        <property name="horizontalAlignment" type="string" />
+      </object>
+      <array typeRef="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_columns_def_items_def" name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_columns_def" />
+      <object name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def_items_def_items_def_items_def">
+        <property name="url" type="string" />
+        <property name="size" type="string" />
+        <property name="type" type="string" />
+        <property name="spacing" type="string" />
+        <property name="columns" typeRef="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_columns_def" />
+      </object>
+      <array typeRef="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def_items_def_items_def_items_def" name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def_items_def_items_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def_items_def_style_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def_items_def_height_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def_items_def_minHeight_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def_items_def_horizontalAlignment_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def_items_def_verticalContentAlignment_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def_items_def_url_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def_items_def_size_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def_items_def__ux24_when_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def_items_def_text_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def_items_def_color_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def_items_def_weight_def" />
+      <boolean name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def_items_def_wrap_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def_items_def_fontType_def" />
+      <boolean name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def_items_def_isSubtle_def" />
+      <object name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def_items_def">
+        <property name="id" type="string" />
+        <property name="type" type="string" />
+        <property name="bleed" type="boolean" />
+        <property name="items" typeRef="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def_items_def_items_def" />
+        <property name="style" type="string" />
+        <property name="height" type="string" />
+        <property name="minHeight" type="string" />
+        <property name="horizontalAlignment" type="string" />
+        <property name="verticalContentAlignment" type="string" />
+        <property name="url" type="string" />
+        <property name="size" type="string" />
+        <property name="$when" type="string" />
+        <property name="text" type="string" />
+        <property name="color" type="string" />
+        <property name="weight" type="string" />
+        <property name="wrap" type="boolean" />
+        <property name="fontType" type="string" />
+        <property name="isSubtle" type="boolean" />
+      </object>
+      <array typeRef="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def_items_def" name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_type_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def__ux24_schema_def" />
+      <object name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_msteams_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_version_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_verticalContentAlignment_def" />
+      <object name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def">
+        <property name="body" typeRef="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_body_def" />
+        <property name="type" type="string" />
+        <property name="$schema" type="string" />
+        <property name="msteams" typeRef="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def_msteams_def" />
+        <property name="version" type="string" />
+        <property name="verticalContentAlignment" type="string" />
+      </object>
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_type_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def__ux24_schema_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_version_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_id_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_type_def" />
+      <boolean name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_bleed_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_url_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_size_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_type_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_spacing_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_columns_def_items_def_type_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_columns_def_items_def_width_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_columns_def_items_def_items_def_items_def_horizontalAlignment_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_columns_def_items_def_items_def_items_def_type_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_columns_def_items_def_items_def_items_def_url_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_columns_def_items_def_items_def_items_def__ux24_when_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_columns_def_items_def_items_def_items_def_style_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_columns_def_items_def_items_def_items_def_id_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_columns_def_items_def_items_def_items_def_size_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_columns_def_items_def_items_def_items_def_text_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_columns_def_items_def_items_def_items_def_weight_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_columns_def_items_def_items_def_items_def_height_def" />
+      <boolean name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_columns_def_items_def_items_def_items_def_wrap_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_columns_def_items_def_items_def_items_def_spacing_def" />
+      <object name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_columns_def_items_def_items_def_items_def">
+        <property name="horizontalAlignment" type="string" />
+        <property name="type" type="string" />
+        <property name="url" type="string" />
+        <property name="$when" type="string" />
+        <property name="style" type="string" />
+        <property name="id" type="string" />
+        <property name="size" type="string" />
+        <property name="text" type="string" />
+        <property name="weight" type="string" />
+        <property name="height" type="string" />
+        <property name="wrap" type="boolean" />
+        <property name="spacing" type="string" />
+      </object>
+      <array typeRef="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_columns_def_items_def_items_def_items_def" name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_columns_def_items_def_items_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_columns_def_items_def_horizontalAlignment_def" />
+      <object name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_columns_def_items_def">
+        <property name="type" type="string" />
+        <property name="width" type="string" />
+        <property name="items" typeRef="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_columns_def_items_def_items_def" />
+        <property name="horizontalAlignment" type="string" />
+      </object>
+      <array typeRef="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_columns_def_items_def" name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_columns_def" />
+      <object name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_items_def_items_def">
+        <property name="url" type="string" />
+        <property name="size" type="string" />
+        <property name="type" type="string" />
+        <property name="spacing" type="string" />
+        <property name="columns" typeRef="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_items_def_items_def_columns_def" />
+      </object>
+      <array typeRef="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_items_def_items_def" name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_items_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_style_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_height_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_minHeight_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_url_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_size_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_horizontalAlignment_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def__ux24_when_def" />
+      <boolean name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_wrap_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_color_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_weight_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_text_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_spacing_def" />
+      <boolean name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_isSubtle_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_verticalContentAlignment_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_columns_def_items_def_type_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_columns_def_items_def_items_def_items_def_type_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_columns_def_items_def_items_def_items_def_actions_def_items_def_type_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_columns_def_items_def_items_def_items_def_actions_def_items_def_url_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_columns_def_items_def_items_def_items_def_actions_def_items_def_style_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_columns_def_items_def_items_def_items_def_actions_def_items_def_title_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_columns_def_items_def_items_def_items_def_actions_def_items_def_iconUrl_def" />
+      <object name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_columns_def_items_def_items_def_items_def_actions_def_items_def">
+        <property name="type" type="string" />
+        <property name="url" type="string" />
+        <property name="style" type="string" />
+        <property name="title" type="string" />
+        <property name="iconUrl" type="string" />
+      </object>
+      <array typeRef="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_columns_def_items_def_items_def_items_def_actions_def_items_def" name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_columns_def_items_def_items_def_items_def_actions_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_columns_def_items_def_items_def_items_def_horizontalAlignment_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_columns_def_items_def_items_def_items_def_spacing_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_columns_def_items_def_items_def_items_def_text_def" />
+      <boolean name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_columns_def_items_def_items_def_items_def_wrap_def" />
+      <boolean name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_columns_def_items_def_items_def_items_def_isSubtle_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_columns_def_items_def_items_def_items_def_weight_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_columns_def_items_def_items_def_items_def_size_def" />
+      <object name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_columns_def_items_def_items_def_items_def">
+        <property name="type" type="string" />
+        <property name="actions" typeRef="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_columns_def_items_def_items_def_items_def_actions_def" />
+        <property name="horizontalAlignment" type="string" />
+        <property name="spacing" type="string" />
+        <property name="text" type="string" />
+        <property name="wrap" type="boolean" />
+        <property name="isSubtle" type="boolean" />
+        <property name="weight" type="string" />
+        <property name="size" type="string" />
+      </object>
+      <array typeRef="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_columns_def_items_def_items_def_items_def" name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_columns_def_items_def_items_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_columns_def_items_def_width_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_columns_def_items_def_horizontalAlignment_def" />
+      <object name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_columns_def_items_def">
+        <property name="type" type="string" />
+        <property name="items" typeRef="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_columns_def_items_def_items_def" />
+        <property name="width" type="string" />
+        <property name="horizontalAlignment" type="string" />
+      </object>
+      <array typeRef="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_columns_def_items_def" name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_columns_def" />
+      <object name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def">
+        <property name="id" type="string" />
+        <property name="type" type="string" />
+        <property name="bleed" type="boolean" />
+        <property name="items" typeRef="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_items_def" />
+        <property name="style" type="string" />
+        <property name="height" type="string" />
+        <property name="minHeight" type="string" />
+        <property name="url" type="string" />
+        <property name="size" type="string" />
+        <property name="horizontalAlignment" type="string" />
+        <property name="$when" type="string" />
+        <property name="wrap" type="boolean" />
+        <property name="color" type="string" />
+        <property name="weight" type="string" />
+        <property name="text" type="string" />
+        <property name="spacing" type="string" />
+        <property name="isSubtle" type="boolean" />
+        <property name="verticalContentAlignment" type="string" />
+        <property name="columns" typeRef="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def_columns_def" />
+      </object>
+      <array typeRef="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def_items_def" name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_verticalContentAlignment_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_minHeight_def" />
+      <object name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_msteams_def" />
+      <object name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def">
+        <property name="type" type="string" />
+        <property name="$schema" type="string" />
+        <property name="version" type="string" />
+        <property name="body" typeRef="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_body_def" />
+        <property name="verticalContentAlignment" type="string" />
+        <property name="minHeight" type="string" />
+        <property name="msteams" typeRef="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def_msteams_def" />
+      </object>
+      <object name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def">
+        <property name="multipleRecipientCardTemplate" typeRef="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_multipleRecipientCardTemplate_def" />
+        <property name="singleRecipientCardTemplate" typeRef="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def_singleRecipientCardTemplate_def" />
+      </object>
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_campaignApprovalType_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_campaignStatus_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_campaignCountry_def" />
+      <integer name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_cashPoolBalance_def" />
+      <integer name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_budgetRemaining_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_showRewardValueToRecipients_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_maxRewardValue_def" />
+      <boolean name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_recipientAvatarEnabled_def" />
+      <boolean name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_senderAvatarEnabled_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_cardData_def_rewardDetails_def_sender_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_cardData_def_rewardDetails_def_recipient_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_cardData_def_rewardDetails_def_recipientImg_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_cardData_def_rewardDetails_def_senderImg_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_cardData_def_rewardDetails_def_reward_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_cardData_def_rewardDetails_def_senderActionString_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_cardData_def_rewardDetails_def_rewardRemarks_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_cardData_def_rewardDetails_def_expiry_def" />
+      <boolean name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_cardData_def_rewardDetails_def_recipientAvatarEnabled_def" />
+      <boolean name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_cardData_def_rewardDetails_def_senderAvatarEnabled_def" />
+      <boolean name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_cardData_def_rewardDetails_def_showRewardImage_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_cardData_def_rewardDetails_def_title_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_cardData_def_rewardDetails_def_buttonText_def" />
+      <object name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_cardData_def_rewardDetails_def">
+        <property name="sender" type="string" />
+        <property name="recipient" type="string" />
+        <property name="recipientImg" type="string" />
+        <property name="senderImg" type="string" />
+        <property name="reward" type="string" />
+        <property name="senderActionString" type="string" />
+        <property name="rewardRemarks" type="string" />
+        <property name="expiry" type="string" />
+        <property name="recipientAvatarEnabled" type="boolean" />
+        <property name="senderAvatarEnabled" type="boolean" />
+        <property name="showRewardImage" type="boolean" />
+        <property name="title" type="string" />
+        <property name="buttonText" type="string" />
+      </object>
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_cardData_def_card_def_topBanner_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_cardData_def_card_def_avatar_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_cardData_def_card_def_rewardImage_def" />
+      <boolean name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_cardData_def_card_def_isRewardCard_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_cardData_def_card_def_showRewardValue_def" />
+      <object name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_cardData_def_card_def">
+        <property name="topBanner" type="string" />
+        <property name="avatar" type="string" />
+        <property name="rewardImage" type="string" />
+        <property name="isRewardCard" type="boolean" />
+        <property name="showRewardValue" type="string" />
+      </object>
+      <object name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_cardData_def">
+        <property name="rewardDetails" typeRef="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_cardData_def_rewardDetails_def" />
+        <property name="card" typeRef="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_cardData_def_card_def" />
+      </object>
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardName_def" />
+      <integer name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_campaignRewardValue_def" />
+      <number name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardPrice_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_campaignRewardCurrency_def" />
+      <string name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_campaignImage_def" />
+      <number name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_conversionRate_def" />
+      <boolean name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_onlyWholeValueSupported_def" />
+      <object name="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def">
+        <property name="campaignName" type="string" />
+        <property name="campaignKey" type="string" />
+        <property name="useSenderBudget" type="boolean" />
+        <property name="rewardCardPreview" typeRef="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_rewardCardPreview_def" />
+        <property name="summaryCardTemplates" typeRef="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_summaryCardTemplates_def" />
+        <property name="campaignApprovalType" type="string" />
+        <property name="campaignStatus" type="string" />
+        <property name="campaignCountry" type="string" />
+        <property name="cashPoolBalance" type="integer" />
+        <property name="budgetRemaining" type="integer" />
+        <property name="showRewardValueToRecipients" type="string" />
+        <property name="maxRewardValue" type="string" />
+        <property name="recipientAvatarEnabled" type="boolean" />
+        <property name="senderAvatarEnabled" type="boolean" />
+        <property name="cardData" typeRef="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def_cardData_def" />
+        <property name="rewardName" type="string" />
+        <property name="campaignRewardValue" type="integer" />
+        <property name="rewardPrice" type="number" />
+        <property name="campaignRewardCurrency" type="string" />
+        <property name="campaignImage" type="string" />
+        <property name="conversionRate" type="number" />
+        <property name="onlyWholeValueSupported" type="boolean" />
+      </object>
+      <array typeRef="TeamsCampaigns_responses_default_def_result_def_campaigns_def_items_def" name="TeamsCampaigns_responses_default_def_result_def_campaigns_def" />
+      <object name="TeamsCampaigns_responses_default_def_result_def">
+        <property name="campaigns" typeRef="TeamsCampaigns_responses_default_def_result_def_campaigns_def" />
+      </object>
+      <boolean name="TeamsCampaigns_responses_default_def_success_def" />
+      <object name="TeamsCampaigns_responses_default_def">
+        <property name="result" typeRef="TeamsCampaigns_responses_default_def_result_def" />
+        <property name="success" type="boolean" />
+      </object>
+    </jsonTypes>
+  </grammars>
+  <resources siena:authenticationProviderHref="#PowerAppAuth" base="https://unitedstates-002.azure-apim.net/apim/bhn-20rewards-20api-5f783a911adcfbc875-5fd0b8579e069f9298">
+    <resource path="/{connectionId}/campaign/list">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="ListCampaigns" actionName="ListCampaigns" siena:isDeprecated="false">
+        <doc title="List Campaigns&#xA;List Campaigns" />
+        <request />
+        <response>
+          <representation mediaType="application/json" element="service:ListCampaigns_responses_default_def" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/teams/get-customer-campaigns">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="TeamsCampaigns" actionName="TeamsCampaigns" siena:isDeprecated="false">
+        <doc title="teams/get-customer-campaigns&#xA;teams/get-customer-campaigns" />
+        <request />
+        <response>
+          <representation mediaType="application/json" element="service:TeamsCampaigns_responses_default_def" />
+        </response>
+      </method>
+    </resource>
+  </resources>
+  <authenticationProviders xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <connectionProvider id="PowerAppAuth" siena:connectionProviderId="shared_bhn-20rewards-20api-5f783a911adcfbc875-5fd0b8579e069f9298" />
+  </authenticationProviders>
+  <template xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <variable name="connectionId">
+      <modifyParams style="template" name="connectionId" attribute="fixed" />
+    </variable>
+  </template>
+</application>
