@@ -4,23 +4,27 @@
   "ControlUniqueIds": {
     "App": 1,
     "CompositePieChart1": 16,
-    "Gallery1": 7,
-    "galleryTemplate1": 8,
-    "Image2": 23,
+    "CompositePieChart2": 20,
+    "Gallery1": 8,
+    "galleryTemplate1": 9,
+    "Image2": 10,
     "Jahneer_Test": 3,
     "Label1": 4,
     "Legend1": 15,
-    "NextArrow2": 26,
-    "PieChart1": 14,
+    "Legend2": 19,
+    "NextArrow2": 12,
+    "PieChart1": 6,
+    "PieChart2": 18,
     "Screen1": 5,
-    "Separator2": 27,
-    "Subtitle2": 25,
-    "Title1": 6,
-    "Title3": 24
+    "Separator2": 14,
+    "Subtitle2": 13,
+    "Title1": 7,
+    "Title2": 17,
+    "Title3": 11
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "10/10/2022 10:16:45",
+  "HeaderLastSavedDateTimeUTC": "10/11/2022 05:15:37",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "1a8871b3-2937-4e45-aa22-5f1288bcae4b": "\"/providers/microsoft.powerapps/apis/shared_bhn-20rewards-20api-5f783a911adcfbc875-5fd0b8579e069f9298/connections/3f0c3a9220eb4f8c975abe75b80df525\""
@@ -45,6 +49,11 @@
       "Legend1": 2,
       "PieChart1": 1,
       "Title1": 0
+    },
+    "CompositePieChart2": {
+      "Legend2": 2,
+      "PieChart2": 1,
+      "Title2": 0
     }
   },
   "OrderPcfTemplate": {},
@@ -60,19 +69,23 @@
   },
   "PublishOrderIndices": {
     "App": 0,
-    "CompositePieChart1": 0,
+    "CompositePieChart1": 11,
+    "CompositePieChart2": 0,
     "Gallery1": 3,
     "galleryTemplate1": 4,
     "Image2": 5,
     "Jahneer_Test": 2,
-    "Label1": 11,
-    "Legend1": 10,
+    "Label1": 15,
+    "Legend1": 14,
+    "Legend2": 13,
     "NextArrow2": 7,
-    "PieChart1": 1,
+    "PieChart1": 10,
+    "PieChart2": 2,
     "Screen1": 4,
     "Separator2": 9,
     "Subtitle2": 8,
-    "Title1": 2,
+    "Title1": 12,
+    "Title2": 1,
     "Title3": 6
   },
   "ResourcesJsonIndices": {
@@ -81,7 +94,7 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.0536094,
+    "AnalysisLoadTime": 0.1623415,
     "ControlCount": {
       "gallery": 1,
       "galleryTemplate": 1,
@@ -94,7 +107,7 @@
       "rectangle": 1,
       "screen": 2
     },
-    "DeserializationLoadTime": 1.161952,
+    "DeserializationLoadTime": 1.2458006,
     "ErrorCount": 0
   },
   "WasLocalDatabaseReferencesEmpty": false
