@@ -13,6 +13,20 @@
     "OverridableProperties": {},
     "Version": "1.0"
   },
+  "circle": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/shapes/circle",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": false,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": true,
+    "LastModifiedTimestamp": "0",
+    "Name": "circle",
+    "OverridableProperties": {},
+    "Version": "2.3.0"
+  },
   "dropdown": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
@@ -26,20 +40,6 @@
     "Name": "dropdown",
     "OverridableProperties": {},
     "Version": "2.3.1"
-  },
-  "form": {
-    "CustomGroupControlTemplateName": "",
-    "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/form",
-    "IsComponentTemplate": false,
-    "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": false,
-    "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": true,
-    "LastModifiedTimestamp": "0",
-    "Name": "form",
-    "OverridableProperties": {},
-    "Version": "2.3.2"
   },
   "gallery": {
     "CustomGroupControlTemplateName": "",
@@ -176,6 +176,20 @@
     "Name": "rectangle",
     "OverridableProperties": {},
     "Version": "2.3.0"
+  },
+  "richTextEditor": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/richTextEditorControl",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": false,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": true,
+    "LastModifiedTimestamp": "0",
+    "Name": "richTextEditor",
+    "OverridableProperties": {},
+    "Version": "2.6.0"
   },
   "screen": {
     "CustomGroupControlTemplateName": "",
