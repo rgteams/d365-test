@@ -208,7 +208,7 @@
 
         Label9_1 As label:
             Align: =Align.Center
-            Color: =If(Value(subPage)=1,selectedTextColor,DefaultTextColor)
+            Color: =If(Value(subPage)=1,selectedTextColor,defaultTextColor)
             Height: =35
             OnSelect: =Set(subPage,1)
             Text: ="1"
