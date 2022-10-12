@@ -1,23 +1,18 @@
 "'Rybbon Rewards' As screen":
 
-    TextInput1 As text:
-        Default: =Office365Users.UserProfile(User().Email).DisplayName
-        X: =802
-        Y: =540
-        ZIndex: =1
-
     Dropdown1 As dropdown:
+        Height: =28
         Items: =Accounts
-        X: =794
-        Y: =440
+        X: =494
+        Y: =40
         ZIndex: =2
 
     RichTextEditor1 As richTextEditor:
         Default: ="Enter some <strong>rich text</strong> here."
-        Height: =420
-        Width: =625
-        X: =169
-        Y: =320
+        Height: =209
+        Width: =741
+        X: =100
+        Y: =512
         ZIndex: =3
 
     Label2 As label:
@@ -99,16 +94,17 @@
         Underline: =true
         Width: =220
         X: =65
-        Y: =122
+        Y: =99
         ZIndex: =12
 
     Rectangle1 As rectangle:
         BorderColor: =RGBA(179, 179, 179, 1)
         BorderThickness: =1
         Fill: =RGBA(0, 0, 0, 0)
+        Height: =89
         Width: =1226
-        X: =65
-        Y: =176
+        X: =63
+        Y: =148
         ZIndex: =13
 
     Label10 As label:
@@ -117,18 +113,18 @@
         Height: =20
         Size: =11
         Text: ="Select Campaign"
-        X: =258
-        Y: =231
+        X: =203
+        Y: =203
         ZIndex: =18
 
     Label10_1 As label:
         Align: =Align.Center
         Color: =RGBA(116, 116, 116, 1)
-        Height: =20
+        Height: =34
         Size: =11
         Text: ="Message"
-        X: =603
-        Y: =231
+        X: =583
+        Y: =189
         ZIndex: =19
 
     Label10_2 As label:
@@ -137,8 +133,8 @@
         Height: =20
         Size: =11
         Text: ="Preview & Send"
-        X: =946
-        Y: =231
+        X: =1044
+        Y: =203
         ZIndex: =20
 
     Label11 As label:
@@ -146,6 +142,13 @@
         X: =526
         Y: =101
         ZIndex: =21
+
+    Rectangle2 As rectangle:
+        Height: =1
+        Width: =200
+        X: =362
+        Y: =187
+        ZIndex: =24
 
     Circles As group:
         Height: =5
@@ -157,63 +160,162 @@
         Circle1 As circle:
             BorderColor: =RGBA(153, 153, 153, 1)
             BorderThickness: =1
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =35
-            Width: =33
-            X: =662
-            Y: =192
+            Fill: =If(Value(subPage)=2,selectedColor,RGBA(56, 96, 178, 0))
+            Height: =38
+            Width: =37
+            X: =639
+            Y: =154
             ZIndex: =14
 
         Label9 As label:
             Align: =Align.Center
-            Height: =35
+            Color: =If(Value(subPage)=2,selectedTextColor,defaultTextColor)
+            Height: =38
             OnSelect: =Set(subPage,2)
             Text: ="2"
-            Width: =33
-            X: =661
-            Y: =192
+            Width: =37
+            X: =639
+            Y: =154
             ZIndex: =15
 
         Circle1_2 As circle:
             BorderColor: =RGBA(153, 153, 153, 1)
             BorderThickness: =1
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =35
-            Width: =33
-            X: =1005
-            Y: =192
+            Fill: =If(Value(subPage)=3,selectedColor,RGBA(56, 96, 178, 0))
+            Height: =38
+            Width: =37
+            X: =1101
+            Y: =156
             ZIndex: =16
 
         Label9_2 As label:
             Align: =Align.Center
-            Color: =If(Value(subPage)=3,RGBA(255, 255, 255, 1),RGBA(0, 0, 0, 1))
-            Height: =35
+            Color: =If(Value(subPage)=3,selectedTextColor,defaultTextColor)
+            Height: =38
             OnSelect: =Set(subPage,3)
             Text: ="3"
-            Width: =33
-            X: =1005
-            Y: =192
+            Width: =37
+            X: =1099
+            Y: =153
             ZIndex: =17
 
         Circle1_1 As circle:
             BorderColor: =RGBA(153, 153, 153, 1)
             BorderThickness: =1
             Fill: =If(Value(subPage)=1,selectedColor,RGBA(56, 96, 178, 0))
-            Height: =35
+            Height: =38
             OnSelect: =Set(subPage,1)
-            Width: =33
-            X: =317
-            Y: =193
+            Width: =37
+            X: =260
+            Y: =156
             ZIndex: =22
 
         Label9_1 As label:
             Align: =Align.Center
             Color: =If(Value(subPage)=1,selectedTextColor,defaultTextColor)
-            Height: =35
+            Height: =38
             OnSelect: =Set(subPage,1)
             Text: ="1"
-            Width: =33
-            X: =316
-            Y: =192
+            Width: =42
+            X: =258
+            Y: =157
             ZIndex: =23
+
+    Rectangle2_1 As rectangle:
+        Height: =1
+        Width: =280
+        X: =747
+        Y: =184
+        ZIndex: =25
+
+    Rectangle3 As rectangle:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderThickness: =1
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =465
+        Width: =821
+        X: =65
+        Y: =274
+        ZIndex: =26
+
+    FromLabel As label:
+        Size: =15
+        Text: ="From"
+        X: =100
+        Y: =325
+        ZIndex: =27
+
+    From As label:
+        Height: =41
+        Size: =15
+        Text: =User().FullName
+        Width: =186
+        X: =313
+        Y: =324
+        ZIndex: =28
+
+    Sepertor3 As rectangle:
+        Height: =1
+        Width: =732
+        X: =109
+        Y: =369
+        ZIndex: =29
+
+    Seperator2 As rectangle:
+        Height: =1
+        Width: =732
+        X: =109
+        Y: =442
+        ZIndex: =30
+
+    sendRewardsToLabel As label:
+        Size: =15
+        Text: ="Send Rewards to"
+        Width: =186
+        X: =99
+        Y: =386
+        ZIndex: =31
+
+    sendRewardsToLabel_1 As label:
+        Size: =15
+        Text: ="Windshold Asher"
+        Width: =186
+        X: =312
+        Y: =379
+        ZIndex: =32
+
+    sendRewardsToLabel_2 As label:
+        Size: =15
+        Text: ="Subject"
+        Width: =186
+        X: =99
+        Y: =455
+        ZIndex: =33
+
+    TextInput2 As text:
+        Default: ="Your Reward from trivia. Thank you for the Meeting"
+        Width: =529
+        X: =312
+        Y: =455
+        ZIndex: =34
+
+    Rectangle5 As rectangle:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderThickness: =1
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =441
+        Width: =369
+        X: =922
+        Y: =298
+        ZIndex: =35
+
+    Label7 As label:
+        FontWeight: =FontWeight.Semibold
+        Height: =67
+        Size: =16
+        Text: ="Selected Reward Campaign"
+        Width: =310
+        X: =940
+        Y: =298
+        ZIndex: =36
 
