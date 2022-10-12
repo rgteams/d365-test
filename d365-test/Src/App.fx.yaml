@@ -1,4 +1,4 @@
 App As appinfo:
     BackEnabled: =false
-    OnStart: =Set(subPage,Value(1));Set(selectedColor,RGBA(56, 96, 178, 1));Set(selectedText,RGBA(255,255, 255, 1))
+    OnStart: =Set(subPage,Value(1));Set(selectedColor,RGBA(56, 96, 178, 1));Set(selectedText,RGBA(255,255, 255, 1));
 
