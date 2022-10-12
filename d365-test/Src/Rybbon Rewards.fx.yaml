@@ -198,7 +198,7 @@
         Circle1_1 As circle:
             BorderColor: =RGBA(153, 153, 153, 1)
             BorderThickness: =1
-            Fill: =If(Value(subPage)=1,RGBA(56, 96, 178, 1),RGBA(56, 96, 178, 0))
+            Fill: =If(Value(subPage)=1,selectedColor,RGBA(56, 96, 178, 0))
             Height: =35
             OnSelect: =Set(subPage,1)
             Width: =33
@@ -208,7 +208,7 @@
 
         Label9_1 As label:
             Align: =Align.Center
-            Color: =If(Value(subPage)=1,selectedText,RGBA(0, 0, 0, 1))
+            Color: =If(Value(subPage)=1,selectedTextColor,DefaultTextColor)
             Height: =35
             Text: ="1"
             Width: =33
