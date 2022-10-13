@@ -7,14 +7,6 @@
         Y: =40
         ZIndex: =2
 
-    RichTextEditor1 As richTextEditor:
-        Default: ="Enter some <strong>rich text</strong> here."
-        Height: =209
-        Width: =741
-        X: =100
-        Y: =512
-        ZIndex: =3
-
     Label2 As label:
         FontWeight: =FontWeight.Bold
         Size: =16
@@ -232,81 +224,20 @@
         BorderColor: =RGBA(166, 166, 166, 1)
         BorderThickness: =1
         Fill: =RGBA(0, 0, 0, 0)
-        Height: =465
+        Height: =485
         Width: =821
         X: =65
-        Y: =274
+        Y: =254
         ZIndex: =26
-
-    FromLabel As label:
-        Size: =15
-        Text: ="From"
-        X: =100
-        Y: =325
-        ZIndex: =27
-
-    From As label:
-        Height: =41
-        Size: =15
-        Text: =User().FullName
-        Width: =186
-        X: =313
-        Y: =324
-        ZIndex: =28
-
-    Sepertor3 As rectangle:
-        Height: =1
-        Width: =732
-        X: =109
-        Y: =369
-        ZIndex: =29
-
-    Seperator2 As rectangle:
-        Height: =1
-        Width: =732
-        X: =109
-        Y: =442
-        ZIndex: =30
-
-    sendRewardsToLabel As label:
-        Size: =15
-        Text: ="Send Rewards to"
-        Width: =186
-        X: =99
-        Y: =386
-        ZIndex: =31
-
-    sendRewardsToLabel_1 As label:
-        Size: =15
-        Text: ="Windshold Asher"
-        Width: =186
-        X: =312
-        Y: =379
-        ZIndex: =32
-
-    sendRewardsToLabel_2 As label:
-        Size: =15
-        Text: ="Subject"
-        Width: =186
-        X: =99
-        Y: =455
-        ZIndex: =33
-
-    TextInput2 As text:
-        Default: ="Your Reward from trivia. Thank you for the Meeting"
-        Width: =529
-        X: =312
-        Y: =455
-        ZIndex: =34
 
     Rectangle5 As rectangle:
         BorderColor: =RGBA(166, 166, 166, 1)
         BorderThickness: =1
         Fill: =RGBA(0, 0, 0, 0)
-        Height: =441
+        Height: =485
         Width: =369
         X: =922
-        Y: =298
+        Y: =254
         ZIndex: =35
 
     Label7 As label:
@@ -318,4 +249,86 @@
         X: =940
         Y: =298
         ZIndex: =36
+
+    Group1 As group:
+        Height: =5
+        Width: =5
+        X: =60
+        Y: =60
+        ZIndex: =37
+
+        RichTextEditor1 As richTextEditor:
+            Default: ="Enter some <strong>rich text</strong> here."
+            Height: =230
+            Width: =763
+            X: =101
+            Y: =475
+            ZIndex: =3
+
+        FromLabel As label:
+            Height: =47
+            Size: =15
+            Text: ="From"
+            Width: =154
+            X: =92
+            Y: =277
+            ZIndex: =27
+
+        From As label:
+            Height: =48
+            Size: =15
+            Text: =User().FullName
+            Width: =192
+            X: =311
+            Y: =276
+            ZIndex: =28
+
+        Sepertor3 As rectangle:
+            Height: =1
+            Width: =754
+            X: =101
+            Y: =328
+            ZIndex: =29
+
+        Seperator2 As rectangle:
+            Height: =1
+            Width: =754
+            X: =98
+            Y: =396
+            ZIndex: =30
+
+        sendRewardsToLabel As label:
+            Height: =47
+            Size: =15
+            Text: ="Send Rewards to"
+            Width: =192
+            X: =101
+            Y: =335
+            ZIndex: =31
+
+        sendRewardsToLabel_1 As label:
+            Height: =47
+            Size: =15
+            Text: ="Windshold Asher"
+            Width: =192
+            X: =310
+            Y: =340
+            ZIndex: =32
+
+        sendRewardsToLabel_2 As label:
+            Height: =47
+            Size: =15
+            Text: ="Subject"
+            Width: =192
+            X: =98
+            Y: =406
+            ZIndex: =33
+
+        TextInput2 As text:
+            Default: ="Your Reward from trivia. Thank you for the Meeting"
+            Height: =47
+            Width: =545
+            X: =320
+            Y: =406
+            ZIndex: =34
 
