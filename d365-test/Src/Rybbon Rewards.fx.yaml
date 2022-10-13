@@ -1,5 +1,5 @@
 "'Rybbon Rewards' As screen":
-    OnVisible: =Set(campaign,BHNrewardsapi.TeamsCampaigns().result.campaigns[0])
+    OnVisible: =
 
     Dropdown1 As dropdown:
         Height: =28
@@ -237,8 +237,8 @@
         Fill: =RGBA(0, 0, 0, 0)
         Height: =485
         Width: =369
-        X: =922
-        Y: =254
+        X: =892
+        Y: =257
         ZIndex: =35
 
     Label7 As label:
@@ -250,6 +250,14 @@
         X: =922
         Y: =257
         ZIndex: =36
+
+    Image1 As image:
+        Height: =112
+        Image: =campaign[0].campaignImage
+        Width: =302
+        X: =909
+        Y: =329
+        ZIndex: =37
 
     Group1 As group:
         Height: =5
