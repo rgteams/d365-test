@@ -1,8 +1,12 @@
 Jahneer_Test As screen:
 
     Label1 As label:
+        PaddingRight: =4.50
+        PaddingTop: =4.50
+        Size: =11.70
         Text: ="This is working"
-        X: =597
+        Width: =134.96
+        X: =537.13
         Y: =348
         ZIndex: =1
 

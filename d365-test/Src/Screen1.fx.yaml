@@ -8,8 +8,8 @@ Screen1 As screen:
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
         TemplateSize: =Min(160, Self.Height - 60)
-        Width: =426
-        X: =420
+        Width: =383.28
+        X: =377.88
         Y: =65
         ZIndex: =1
 
@@ -17,8 +17,10 @@ Screen1 As screen:
             Height: =128
             Image: =ThisItem.campaignImage
             OnSelect: =Select(Parent)
-            Width: =128
-            X: =16
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Width: =115.16
+            X: =14.40
             Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
             ZIndex: =1
 
@@ -27,12 +29,13 @@ Screen1 As screen:
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Size: =17.99
             Text: =ThisItem.campaignName
             VerticalAlign: =VerticalAlign.Top
-            Width: =Parent.TemplateWidth - Image2.Width - 104
-            X: =Image2.X + Image2.Width + 24
+            Width: =174.54
+            X: =151.15
             Y: =44
             ZIndex: =2
 
@@ -41,12 +44,13 @@ Screen1 As screen:
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Size: =16.19
             Text: =ThisItem.rewardName
             VerticalAlign: =VerticalAlign.Top
-            Width: =Title3.Width
-            X: =Title3.X
+            Width: =174.54
+            X: =151.15
             Y: =Title3.Y + Title3.Height + 4
             ZIndex: =3
 
@@ -57,19 +61,20 @@ Screen1 As screen:
             OnSelect: =Select(Parent)
             PaddingBottom: =10
             PaddingLeft: =10
-            PaddingRight: =10
-            PaddingTop: =10
+            PaddingRight: =9.00
+            PaddingTop: =9.00
             TabIndex: =0
             Tooltip: ="View item details"
-            Width: =60
-            X: =Parent.TemplateWidth - Self.Width - 5
+            Width: =53.98
+            X: =324.79
             Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
             ZIndex: =4
 
         Separator2 As rectangle:
             Height: =1
             OnSelect: =Select(Parent)
-            Width: =Parent.TemplateWidth
+            Width: =383.28
+            X: =0.00
             Y: =Parent.TemplateHeight - 1
             ZIndex: =5
 
@@ -84,11 +89,13 @@ Screen1 As screen:
             Align: =Align.Center
             FontWeight: =FontWeight.Bold
             Height: =28
-            Size: =16
+            PaddingRight: =4.50
+            PaddingTop: =4.50
+            Size: =14.40
             Text: ="Laptop Market Share - 2018"
             Underline: =true
-            Width: =334
-            X: =33
+            Width: =300.50
+            X: =29.69
             Y: =97
             ZIndex: =2
 
@@ -96,9 +103,9 @@ Screen1 As screen:
             Height: =402
             ItemBorderThickness: =0
             Items: =DummyDataCharts
-            Size: =16
-            Width: =356
-            X: =11
+            Size: =14.40
+            Width: =320.30
+            X: =9.90
             Y: =97
             ZIndex: =3
 
@@ -106,9 +113,9 @@ Screen1 As screen:
             Height: =176
             ItemColorSet: =PieChart1.ItemColorSet
             Items: =PieChart1.SeriesLabels
-            Size: =16
-            Width: =334
-            X: =33
+            Size: =14.40
+            Width: =300.50
+            X: =29.69
             Y: =499
             ZIndex: =4
 
@@ -123,10 +130,12 @@ Screen1 As screen:
             Align: =Align.Center
             FontWeight: =FontWeight.Bold
             Height: =45
-            Size: =16
+            PaddingRight: =4.50
+            PaddingTop: =4.50
+            Size: =14.40
             Text: ="Campaign Budget Remaining"
-            Width: =444
-            X: =884
+            Width: =399.47
+            X: =785
             Y: =20
             ZIndex: =6
 
@@ -139,9 +148,9 @@ Screen1 As screen:
             ItemColorSet: =[RGBA(60, 157, 78, 1),RGBA(112, 49, 172, 1), RGBA(201, 77, 109,1), RGBA(228, 191, 88,1), RGBA(65, 116, 201,1), RGBA(247,180,91,1), RGBA(246,143,100,1), RGBA(212,96,104,1), RGBA(148, 110, 176, 1), RGBA(118, 154, 204, 1), RGBA(96, 197, 234, 1)]
             Items: =BHNrewardsapi.TeamsCampaigns().result.campaigns
             LabelPosition: =LabelPosition.Inside
-            Size: =16
-            Width: =414
-            X: =899
+            Size: =14.40
+            Width: =372.48
+            X: =785
             Y: =32
             ZIndex: =7
 
@@ -149,9 +158,9 @@ Screen1 As screen:
             Height: =200
             ItemColorSet: =PieChart2.ItemColorSet
             Items: =PieChart2.SeriesLabels
-            Size: =16
-            Width: =444
-            X: =884
+            Size: =14.40
+            Width: =399.47
+            X: =785
             Y: =490
             ZIndex: =8
 

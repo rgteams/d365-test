@@ -4,40 +4,55 @@
     Dropdown1 As dropdown:
         Height: =28
         Items: =Accounts
-        X: =494
+        PaddingRight: =9.00
+        PaddingTop: =9.00
+        Size: =11.70
+        Width: =295.10
+        X: =444.46
         Y: =40
         ZIndex: =2
 
     Label2 As label:
         FontWeight: =FontWeight.Bold
-        Size: =16
+        PaddingRight: =4.50
+        PaddingTop: =4.50
+        Size: =14.40
         Text: ="Reward"
-        X: =65
+        Width: =134.96
+        X: =58.48
         Y: =40
         ZIndex: =4
 
     Label3 As label:
         Height: =42
+        PaddingRight: =4.50
+        PaddingTop: =4.50
+        Size: =11.70
         Text: ="with Rybbon by Blackhawk network"
-        Width: =312
-        X: =65
+        Width: =280.71
+        X: =58.48
         Y: =59
         ZIndex: =5
 
     Label4 As label:
         FontWeight: =FontWeight.Bold
-        Size: =15
+        PaddingRight: =4.50
+        PaddingTop: =4.50
+        Size: =13.50
         Text: ="New"
-        Width: =71
-        X: =1067
+        Width: =63.88
+        X: =959.99
         Y: =40
         ZIndex: =6
 
     Label5 As label:
         Height: =42
+        PaddingRight: =4.50
+        PaddingTop: =4.50
+        Size: =11.70
         Text: ="Status"
-        Width: =71
-        X: =1067
+        Width: =63.88
+        X: =959.99
         Y: =59
         ZIndex: =7
 
@@ -46,47 +61,58 @@
         Height: =61
         PaddingBottom: =1
         PaddingLeft: =1
-        PaddingRight: =1
-        PaddingTop: =1
+        PaddingRight: =0.90
+        PaddingTop: =0.90
+        Size: =11.70
         Text: =""
-        Width: =0
-        X: =1141
+        Width: =0.00
+        X: =1026.57
         Y: =40
         ZIndex: =8
 
     User As label:
         BorderColor: =
         FontWeight: =FontWeight.Bold
+        PaddingRight: =4.50
+        PaddingTop: =4.50
+        Size: =11.70
         Text: =User().FullName
-        Width: =107
-        X: =1154
+        Width: =96.27
+        X: =1038.26
         Y: =40
         ZIndex: =9
 
     Label7_1 As label:
         BorderColor: =
+        PaddingRight: =4.50
+        PaddingTop: =4.50
+        Size: =11.70
         Text: |
             ="Owner"
-        Width: =107
-        X: =1154
+        Width: =96.27
+        X: =1038.26
         Y: =59
         ZIndex: =10
 
     Icon1 As icon.ChevronDown:
         Height: =16
         Icon: =Icon.ChevronDown
-        Width: =30
-        X: =1261
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =26.99
+        X: =1134.53
         Y: =71
         ZIndex: =11
 
     Label8 As label:
         FontWeight: =FontWeight.Bold
-        Size: =16
+        PaddingRight: =4.50
+        PaddingTop: =4.50
+        Size: =14.40
         Text: ="BHN Rewards"
         Underline: =true
-        Width: =220
-        X: =65
+        Width: =197.94
+        X: =58.48
         Y: =99
         ZIndex: =12
 
@@ -95,8 +121,8 @@
         BorderThickness: =1
         Fill: =RGBA(0, 0, 0, 0)
         Height: =89
-        Width: =1226
-        X: =63
+        Width: =1103.04
+        X: =56.68
         Y: =148
         ZIndex: =13
 
@@ -104,9 +130,12 @@
         Align: =Align.Center
         Color: =RGBA(116, 116, 116, 1)
         Height: =20
-        Size: =11
+        PaddingRight: =4.50
+        PaddingTop: =4.50
+        Size: =9.90
         Text: ="Select Campaign"
-        X: =203
+        Width: =134.96
+        X: =182.64
         Y: =203
         ZIndex: =18
 
@@ -114,9 +143,12 @@
         Align: =Align.Center
         Color: =RGBA(116, 116, 116, 1)
         Height: =34
-        Size: =11
+        PaddingRight: =4.50
+        PaddingTop: =4.50
+        Size: =9.90
         Text: ="Message"
-        X: =583
+        Width: =134.96
+        X: =524.53
         Y: =189
         ZIndex: =19
 
@@ -124,22 +156,29 @@
         Align: =Align.Center
         Color: =RGBA(116, 116, 116, 1)
         Height: =20
-        Size: =11
+        PaddingRight: =4.50
+        PaddingTop: =4.50
+        Size: =9.90
         Text: ="Preview & Send"
-        X: =1044
+        Width: =134.96
+        X: =939.29
         Y: =203
         ZIndex: =20
 
     Label11 As label:
+        PaddingRight: =4.50
+        PaddingTop: =4.50
+        Size: =11.70
         Text: ="Current page"+subPage
-        X: =526
+        Width: =134.96
+        X: =473.25
         Y: =101
         ZIndex: =21
 
     Rectangle2 As rectangle:
         Height: =1
-        Width: =200
-        X: =362
+        Width: =179.94
+        X: =325.69
         Y: =187
         ZIndex: =24
 
@@ -154,9 +193,9 @@
             BorderColor: =RGBA(153, 153, 153, 1)
             BorderThickness: =1
             Fill: =If(Value(subPage)=2,selectedColor,RGBA(56, 96, 178, 0))
-            Height: =38
-            Width: =37
-            X: =639
+            Height: =34.19
+            Width: =33.29
+            X: =574.91
             Y: =154
             ZIndex: =14
 
@@ -165,9 +204,12 @@
             Color: =If(Value(subPage)=2,selectedTextColor,defaultTextColor)
             Height: =38
             OnSelect: =Set(subPage,2)
+            PaddingRight: =4.50
+            PaddingTop: =4.50
+            Size: =11.70
             Text: ="2"
-            Width: =37
-            X: =639
+            Width: =33.29
+            X: =574.91
             Y: =154
             ZIndex: =15
 
@@ -175,9 +217,9 @@
             BorderColor: =RGBA(153, 153, 153, 1)
             BorderThickness: =1
             Fill: =If(Value(subPage)=3,selectedColor,RGBA(56, 96, 178, 0))
-            Height: =38
-            Width: =37
-            X: =1101
+            Height: =34.19
+            Width: =33.29
+            X: =990.58
             Y: =156
             ZIndex: =16
 
@@ -186,9 +228,12 @@
             Color: =If(Value(subPage)=3,selectedTextColor,defaultTextColor)
             Height: =38
             OnSelect: =Set(subPage,3)
+            PaddingRight: =4.50
+            PaddingTop: =4.50
+            Size: =11.70
             Text: ="3"
-            Width: =37
-            X: =1099
+            Width: =33.29
+            X: =988.78
             Y: =153
             ZIndex: =17
 
@@ -196,10 +241,10 @@
             BorderColor: =RGBA(153, 153, 153, 1)
             BorderThickness: =1
             Fill: =If(Value(subPage)=1,selectedColor,RGBA(56, 96, 178, 0))
-            Height: =38
+            Height: =34.19
             OnSelect: =Set(subPage,1)
-            Width: =37
-            X: =260
+            Width: =33.29
+            X: =233.92
             Y: =156
             ZIndex: =22
 
@@ -208,16 +253,19 @@
             Color: =If(Value(subPage)=1,selectedTextColor,defaultTextColor)
             Height: =38
             OnSelect: =Set(subPage,1)
+            PaddingRight: =4.50
+            PaddingTop: =4.50
+            Size: =11.70
             Text: ="1"
-            Width: =42
-            X: =258
+            Width: =37.79
+            X: =232.12
             Y: =157
             ZIndex: =23
 
     Rectangle2_1 As rectangle:
         Height: =1
-        Width: =280
-        X: =747
+        Width: =251.92
+        X: =672.08
         Y: =184
         ZIndex: =25
 
@@ -226,8 +274,8 @@
         BorderThickness: =1
         Fill: =RGBA(0, 0, 0, 0)
         Height: =485
-        Width: =821
-        X: =65
+        Width: =738.66
+        X: =58.48
         Y: =254
         ZIndex: =26
 
@@ -236,27 +284,31 @@
         BorderThickness: =1
         Fill: =RGBA(0, 0, 0, 0)
         Height: =485
-        Width: =369
-        X: =892
+        Width: =331.99
+        X: =802.54
         Y: =257
         ZIndex: =35
 
     Label7 As label:
         FontWeight: =FontWeight.Semibold
         Height: =67
-        Size: =16
+        PaddingRight: =4.50
+        PaddingTop: =4.50
+        Size: =14.40
         Text: ="Selected Reward Campaign"
-        Width: =310
-        X: =922
-        Y: =257
+        Width: =278.91
+        X: =816.93
+        Y: =247
         ZIndex: =36
 
     Image1 As image:
-        Height: =112
+        Height: =77
         Image: =selectedCampaign.campaignImage
-        Width: =302
-        X: =909
-        Y: =329
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =125
+        X: =839
+        Y: =372
         ZIndex: =37
 
     Group1 As group:
@@ -269,75 +321,166 @@
         RichTextEditor1 As richTextEditor:
             Default: ="Enter some <strong>rich text</strong> here."
             Height: =230
-            Width: =763
-            X: =101
+            Size: =9.90
+            Width: =686.48
+            X: =90.87
             Y: =475
             ZIndex: =3
 
         FromLabel As label:
             Height: =47
-            Size: =15
+            PaddingRight: =4.50
+            PaddingTop: =4.50
+            Size: =13.50
             Text: ="From"
-            Width: =154
-            X: =92
+            Width: =138.55
+            X: =82.77
             Y: =277
             ZIndex: =27
 
         From As label:
             Height: =48
-            Size: =15
+            PaddingRight: =4.50
+            PaddingTop: =4.50
+            Size: =13.50
             Text: =User().FullName
-            Width: =192
-            X: =311
+            Width: =172.74
+            X: =279.81
             Y: =276
             ZIndex: =28
 
         Sepertor3 As rectangle:
             Height: =1
-            Width: =754
-            X: =101
+            Width: =678.38
+            X: =90.87
             Y: =328
             ZIndex: =29
 
         Seperator2 As rectangle:
             Height: =1
-            Width: =754
-            X: =98
+            Width: =678.38
+            X: =88.17
             Y: =396
             ZIndex: =30
 
         sendRewardsToLabel As label:
             Height: =47
-            Size: =15
+            PaddingRight: =4.50
+            PaddingTop: =4.50
+            Size: =13.50
             Text: ="Send Rewards to"
-            Width: =192
-            X: =101
+            Width: =172.74
+            X: =90.87
             Y: =335
             ZIndex: =31
 
         sendRewardsToLabel_1 As label:
             Height: =47
-            Size: =15
+            PaddingRight: =4.50
+            PaddingTop: =4.50
+            Size: =13.50
             Text: ="Windshold Asher"
-            Width: =192
-            X: =310
+            Width: =172.74
+            X: =278.91
             Y: =340
             ZIndex: =32
 
         sendRewardsToLabel_2 As label:
             Height: =47
-            Size: =15
+            PaddingRight: =4.50
+            PaddingTop: =4.50
+            Size: =13.50
             Text: ="Subject"
-            Width: =192
-            X: =98
+            Width: =172.74
+            X: =88.17
             Y: =406
             ZIndex: =33
 
         TextInput2 As text:
             Default: ="Your Reward from trivia. Thank you for the Meeting"
             Height: =47
-            Width: =545
-            X: =320
+            PaddingRight: =4.50
+            PaddingTop: =4.50
+            Size: =11.70
+            Width: =490.34
+            X: =287.91
             Y: =406
             ZIndex: =34
+
+    Rectangle4 As rectangle:
+        BorderColor: =RGBA(128, 128, 128, 1)
+        BorderThickness: =1
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =174
+        Width: =283.41
+        X: =825.03
+        Y: =324
+        ZIndex: =38
+
+    Label6 As label:
+        FontWeight: =FontWeight.Semibold
+        Height: =34
+        PaddingRight: =4.50
+        PaddingTop: =4.50
+        Size: =11.70
+        Text: =selectedCampaign.campaignName
+        Width: =283.41
+        X: =825.03
+        Y: =324
+        ZIndex: =39
+
+    Rectangle6 As rectangle:
+        BorderColor: =RGBA(153, 153, 153, 1)
+        Fill: =RGBA(128, 128, 128, 1)
+        Height: =2
+        Width: =269
+        X: =832
+        Y: =358
+        ZIndex: =40
+
+    Currency As label:
+        Height: =24
+        Text: =selectedCampaign.campaignRewardCurrency
+        Width: =39
+        X: =975
+        Y: =363
+        ZIndex: =41
+
+    campaignPrice As label:
+        Font: =Font.Arial
+        FontWeight: =FontWeight.Bold
+        Height: =25
+        Text: =selectedCampaign.rewardPrice
+        Width: =65
+        X: =1009
+        Y: =362
+        ZIndex: =42
+
+    Currency_1 As label:
+        Height: =19
+        Text: |
+            =selectedCampaign.campaignApprovalType
+        Width: =139
+        X: =965
+        Y: =387
+        ZIndex: =43
+
+    Currency_2 As label:
+        Color: =RGBA(54, 176, 75, 1)
+        Height: =19
+        Size: =12
+        Text: ="Status"
+        Width: =61
+        X: =965
+        Y: =408
+        ZIndex: =44
+
+    Label13 As label:
+        Fill: =If(selectedCampaign.campaignStatus="on",RGBA(0, 255, 0,1),RGBA(0,0,0,0))
+        Height: =21
+        Text: =Upper(selectedCampaign.campaignStatus)
+        Width: =39
+        X: =1022
+        Y: =408
+        ZIndex: =45
 
