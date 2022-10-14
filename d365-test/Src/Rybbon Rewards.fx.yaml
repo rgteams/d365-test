@@ -122,7 +122,7 @@
         BorderThickness: =1
         Fill: =RGBA(0, 0, 0, 0)
         Height: =65
-        Width: =1103.04
+        Width: =1120
         X: =56.68
         Y: =148
         ZIndex: =13
@@ -275,49 +275,17 @@
         BorderThickness: =1
         Fill: =RGBA(0, 0, 0, 0)
         Height: =507
-        Width: =738.66
+        Width: =754
         X: =58.48
         Y: =232
         ZIndex: =26
 
-    Rectangle5 As rectangle:
-        BorderColor: =RGBA(166, 166, 166, 1)
-        BorderThickness: =1
-        Fill: =RGBA(0, 0, 0, 0)
-        Height: =507
-        Width: =331.99
-        X: =825
-        Y: =232
-        ZIndex: =35
-
-    Label7 As label:
-        FontWeight: =FontWeight.Semibold
-        Height: =42
-        PaddingRight: =4.50
-        PaddingTop: =4.50
-        Size: =14.40
-        Text: ="Selected Reward Campaign"
-        Width: =278
-        X: =831
-        Y: =235
-        ZIndex: =36
-
-    Image1 As image:
-        Height: =77
-        Image: =selectedCampaign.campaignImage
-        PaddingRight: =0.00
-        PaddingTop: =0.00
-        Width: =125
-        X: =850
-        Y: =370
-        ZIndex: =37
-
-    Group1 As group:
+    Form As group:
         Height: =5
         Width: =5
         X: =60
         Y: =60
-        ZIndex: =37
+        ZIndex: =54
 
         RichTextEditor1 As richTextEditor:
             Default: ="Enter some <strong>rich text</strong> here."
@@ -408,132 +376,180 @@
             Y: =372
             ZIndex: =34
 
-    Rectangle4 As rectangle:
-        BorderColor: =RGBA(179, 179, 179, 1)
-        BorderThickness: =1
-        Fill: =RGBA(0, 0, 0, 0)
-        Height: =151
-        Width: =298
-        X: =839
-        Y: =319
-        ZIndex: =38
+        Form1 As form:
+            X: =26
+            Y: =226
+            ZIndex: =53
 
-    Label6 As label:
-        FontWeight: =FontWeight.Semibold
-        Height: =35
-        PaddingRight: =4.50
-        PaddingTop: =4.50
-        Size: =11.70
-        Text: =selectedCampaign.campaignName
-        Width: =295
-        X: =839
-        Y: =319
-        ZIndex: =39
+    selectedCampaignBox As group:
+        Height: =5
+        Width: =5
+        X: =60
+        Y: =60
+        ZIndex: =54
 
-    Rectangle6 As rectangle:
-        BorderColor: =RGBA(153, 153, 153, 1)
-        Fill: =RGBA(128, 128, 128, 1)
-        Height: =1
-        Width: =269
-        X: =846
-        Y: =357
-        ZIndex: =40
+        Rectangle5 As rectangle:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            BorderThickness: =1
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =507
+            Width: =350
+            X: =826
+            Y: =235
+            ZIndex: =35
 
-    Currency As label:
-        Height: =24
-        Text: =selectedCampaign.campaignRewardCurrency
-        Width: =39
-        X: =975
-        Y: =363
-        ZIndex: =41
+        Label7 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =42
+            PaddingRight: =4.50
+            PaddingTop: =4.50
+            Size: =14.40
+            Text: ="Selected Reward Campaign"
+            Width: =294
+            X: =839
+            Y: =241
+            ZIndex: =36
 
-    campaignPrice As label:
-        Font: =Font.Arial
-        FontWeight: =FontWeight.Bold
-        Height: =25
-        Text: =selectedCampaign.rewardPrice
-        Width: =65
-        X: =1009
-        Y: =362
-        ZIndex: =42
+        Image1 As image:
+            Height: =77
+            Image: =selectedCampaign.campaignImage
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Width: =117
+            X: =846
+            Y: =370
+            ZIndex: =37
 
-    Currency_1 As label:
-        Height: =19
-        Text: |
-            =selectedCampaign.campaignApprovalType
-        Width: =139
-        X: =970
-        Y: =392
-        ZIndex: =43
+        Rectangle4 As rectangle:
+            BorderColor: =RGBA(179, 179, 179, 1)
+            BorderThickness: =1
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =151
+            Width: =324
+            X: =836
+            Y: =319
+            ZIndex: =38
 
-    Currency_2 As label:
-        Color: =RGBA(54, 176, 75, 1)
-        Height: =19
-        Size: =12
-        Text: ="Status"
-        Width: =61
-        X: =974
-        Y: =419
-        ZIndex: =44
+        Label6 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =35
+            PaddingRight: =4.50
+            PaddingTop: =4.50
+            Size: =11.70
+            Text: =selectedCampaign.campaignName
+            Width: =312
+            X: =839
+            Y: =319
+            ZIndex: =39
 
-    Label13 As label:
-        Fill: =If(selectedCampaign.campaignStatus="on",RGBA(0, 255, 0,1),RGBA(0,0,0,0))
-        Height: =21
-        Text: =Upper(selectedCampaign.campaignStatus)
-        Width: =39
-        X: =1038
-        Y: =420
-        ZIndex: =45
+        Rectangle6 As rectangle:
+            BorderColor: =RGBA(153, 153, 153, 1)
+            Fill: =RGBA(128, 128, 128, 1)
+            Height: =1
+            Width: =284
+            X: =846
+            Y: =357
+            ZIndex: =40
 
-    Label12 As label:
-        Color: =RGBA(116, 116, 116, 1)
-        FontWeight: =FontWeight.Bold
-        Text: ="Your Budget Status"
-        Width: =198
-        X: =827
-        Y: =493
-        ZIndex: =46
+        Currency As label:
+            Height: =24
+            Text: =selectedCampaign.campaignRewardCurrency
+            Width: =41
+            X: =986
+            Y: =363
+            ZIndex: =41
 
-    Label14 As label:
-        Color: =RGBA(116, 116, 116, 1)
-        Text: ="Your Budget"
-        X: =840
-        Y: =533
-        ZIndex: =47
+        campaignPrice As label:
+            Font: =Font.Arial
+            FontWeight: =FontWeight.Bold
+            Height: =25
+            Text: =selectedCampaign.rewardPrice
+            Width: =69
+            X: =1036
+            Y: =362
+            ZIndex: =42
 
-    Label15 As label:
-        Text: ="$"&Text(8000,"0.00")
-        X: =1006
-        Y: =533
-        ZIndex: =48
+        Currency_1 As label:
+            Height: =19
+            Text: |
+                =selectedCampaign.campaignApprovalType
+            Width: =147
+            X: =986
+            Y: =391
+            ZIndex: =43
 
-    Label14_1 As label:
-        Color: =RGBA(116, 116, 116, 1)
-        Text: ="Budget Used"
-        X: =842
-        Y: =585
-        ZIndex: =49
+        Currency_2 As label:
+            Color: =RGBA(54, 176, 75, 1)
+            Height: =20
+            Size: =12
+            Text: ="Status"
+            Width: =65
+            X: =990
+            Y: =427
+            ZIndex: =44
 
-    Label15_1 As label:
-        Text: |-
-            ="$" &Text(300000.23,"[$-en-US]#.00")
-        Width: =128
-        X: =1008
-        Y: =585
-        ZIndex: =50
+        Label13 As label:
+            Fill: =If(selectedCampaign.campaignStatus="on",RGBA(0, 255, 0,1),RGBA(0,0,0,0))
+            Height: =21
+            Text: =Upper(selectedCampaign.campaignStatus)
+            Width: =41
+            X: =1065
+            Y: =427
+            ZIndex: =45
 
-    Label14_2 As label:
-        Color: =RGBA(116, 116, 116, 1)
-        Text: ="Budget Balance"
-        X: =842
-        Y: =638
-        ZIndex: =51
+        Label12 As label:
+            Color: =RGBA(116, 116, 116, 1)
+            FontWeight: =FontWeight.Bold
+            Text: ="Your Budget Status"
+            Width: =209
+            X: =826
+            Y: =483
+            ZIndex: =46
 
-    Label15_2 As label:
-        Text: |-
-            ="$" &Text(selectedCampaign.budgetRemaining,"[$-en-US]#")
-        Width: =128
-        X: =1006
-        Y: =638
-        ZIndex: =52
+        Label14 As label:
+            Color: =RGBA(116, 116, 116, 1)
+            Text: ="Your Budget"
+            Width: =159
+            X: =831
+            Y: =534
+            ZIndex: =47
+
+        Label15 As label:
+            Text: ="$"&Text(8000,"0.00")
+            Width: =159
+            X: =996
+            Y: =533
+            ZIndex: =48
+
+        Label14_1 As label:
+            Color: =RGBA(116, 116, 116, 1)
+            Text: ="Budget Used"
+            Width: =159
+            X: =836
+            Y: =585
+            ZIndex: =49
+
+        Label15_1 As label:
+            Text: |-
+                ="$" &Text(300000.23,"[$-en-US]#.00")
+            Width: =142
+            X: =995
+            Y: =585
+            ZIndex: =50
+
+        Label14_2 As label:
+            Color: =RGBA(116, 116, 116, 1)
+            Text: ="Budget Balance"
+            Width: =159
+            X: =839
+            Y: =638
+            ZIndex: =51
+
+        Label15_2 As label:
+            Text: |-
+                ="$" &Text(selectedCampaign.budgetRemaining,"[$-en-US]#.0")
+            Width: =135
+            X: =996
+            Y: =638
+            ZIndex: =52
 
