@@ -1,8 +1,60 @@
 FormPost As screen:
 
-    Form2 As form:
-        DataSource: =DummyRestAPIExample.InfoAboutEmployeese().data
-        X: =40
-        Y: =40
+    txtName As text:
+        Default: =
+        Height: =51
+        Width: =233
+        X: =270
+        Y: =57
         ZIndex: =1
+
+    lblName As label:
+        Height: =51
+        Text: ="Employee Name"
+        Width: =222
+        X: =39
+        Y: =57
+        ZIndex: =2
+
+    txtAge As text:
+        Default: =
+        Height: =51
+        Width: =233
+        X: =270
+        Y: =125
+        ZIndex: =3
+
+    lblAge As label:
+        Height: =51
+        Text: ="Employee Age"
+        Width: =222
+        X: =39
+        Y: =125
+        ZIndex: =4
+
+    txtSalary As text:
+        Default: =
+        Height: =51
+        Width: =233
+        X: =270
+        Y: =210
+        ZIndex: =5
+
+    lblSalary As label:
+        Height: =51
+        Text: |-
+            ="Employee Salery
+            "
+        Width: =222
+        X: =39
+        Y: =210
+        ZIndex: =6
+
+    Button1 As button:
+        OnSelect: |
+            =Set(employeeData,{employee_name:txtName.Text,employee_salary:txtSalary.Text,employee_age:txtAge.Text});
+        Text: ="Save"
+        X: =147
+        Y: =315
+        ZIndex: =7
 
