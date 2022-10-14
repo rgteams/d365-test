@@ -1,4 +1,5 @@
 "'Rybbon Rewards' As screen":
+    Fill: =RGBA(0, 0, 0, 0)
     OnVisible: =
 
     Dropdown1 As dropdown:
@@ -419,12 +420,12 @@
 
     Label6 As label:
         FontWeight: =FontWeight.Semibold
-        Height: =34
+        Height: =35
         PaddingRight: =4.50
         PaddingTop: =4.50
         Size: =11.70
         Text: =selectedCampaign.campaignName
-        Width: =283.41
+        Width: =295
         X: =839
         Y: =319
         ZIndex: =39
@@ -514,9 +515,10 @@
         ZIndex: =49
 
     Label15_1 As label:
-        Text: ="$" &Text(selectedCampaign.budgetRemaining,"0.00")
+        Text: |-
+            ="$" &Text(300000.23,"[$-en-US]#.00")
         Width: =128
-        X: =1009
+        X: =1008
         Y: =585
         ZIndex: =50
 
@@ -528,7 +530,8 @@
         ZIndex: =51
 
     Label15_2 As label:
-        Text: ="$" &Text(3000,"0.00")
+        Text: |-
+            ="$" &Text(selectedCampaign.budgetRemaining,"[$-en-US]#")
         Width: =128
         X: =1006
         Y: =638
