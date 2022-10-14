@@ -1,4 +1,4 @@
-Screen2 As screen:
+FormPost As screen:
 
     Form2 As form:
         DataSource: =DummyRestAPIExample.InfoAboutEmployeese().data
