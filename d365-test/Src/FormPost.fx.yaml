@@ -53,7 +53,7 @@ FormPost As screen:
     Button1 As button:
         OnSelect: |-
             =Set(employeeData,{employee_name:txtName.Text,employee_salary:txtSalary.Text,employee_age:txtAge.Text});
-            SaveEmployee.Run(txtName.Text,txtSalary.Text,txtAge.Text);
+            Set(apiResponse, SaveEmployee.Run(txtName.Text,txtSalary.Text,txtAge.Text).data);
         Text: ="Save"
         X: =147
         Y: =315

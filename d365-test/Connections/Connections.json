@@ -1,4 +1,21 @@
 {
+  "0c407bd2-c81c-4897-bdf1-b721e6d96c07": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "testAPI",
+      "iconUri": "https://az787822.vo.msecnd.net/defaulticons/api-dedicated.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_testapi-5f783a911adcfbc875-5fd0b8579e069f9298"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "cf4d312d-cb3d-4035-9902-68b34e5d7d88"
+    ],
+    "id": "0c407bd2-c81c-4897-bdf1-b721e6d96c07"
+  },
   "1a8871b3-2937-4e45-aa22-5f1288bcae4b": {
     "connectionParameters": {
       "sku": "Enterprise"
@@ -37,7 +54,7 @@
     "dependents": [],
     "id": "526396e2-d3a2-4eb8-8064-9f26b78cabcf"
   },
-  "54719ed9-5221-4c8e-9e24-b6a369145ad1": {
+  "cf4d312d-cb3d-4035-9902-68b34e5d7d88": {
     "connectionParameters": {
       "workFlowCallbackUri": "https://prod-38.westus.logic.azure.com:443/workflows/ef1820f5fbd74e7f84a9b8171e91f2df/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=qjL7YgHc83FE7KPGXBTGAwLEEcS4Hc7ysZGJCLVBUyg",
       "workflowEndpoint": "/subscriptions/754abb9d-e636-47dd-b406-0a8f58702e36/resourceGroups/329b2f46cdd64514ae960d2b61a5dd3b-47436e4f7a4847259b8fbeb737e049ba/providers/Microsoft.Logic/workflows/a36e3220-61ea-4e26-91a3-03313de42dfa",
@@ -49,18 +66,12 @@
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1534/1.0.1534.2605/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
-        "f07f4eff-30be-447f-9fc8-9b5f5df69e61": {
-          "value": "shared_testapi-5f783a911adcfbc875-5fd0b8579e069f9298"
-        },
         "workflowEntityId": {},
         "workflowName": {
           "value": "a36e3220-61ea-4e26-91a3-03313de42dfa"
         }
       },
       "parameterHintsV2": {
-        "shared_testapi-5f783a911adcfbc875-5fd0b8579e069f9298": {
-          "value": "f07f4eff-30be-447f-9fc8-9b5f5df69e61"
-        },
         "workflowEntityId": {},
         "workflowName": {
           "value": "a36e3220-61ea-4e26-91a3-03313de42dfa"
@@ -72,26 +83,9 @@
       "SaveEmployee"
     ],
     "dependencies": {
-      "shared_testapi-5f783a911adcfbc875-5fd0b8579e069f9298": "f07f4eff-30be-447f-9fc8-9b5f5df69e61"
+      "shared_testapi-5f783a911adcfbc875-5fd0b8579e069f9298": "0c407bd2-c81c-4897-bdf1-b721e6d96c07"
     },
     "dependents": [],
-    "id": "54719ed9-5221-4c8e-9e24-b6a369145ad1"
-  },
-  "f07f4eff-30be-447f-9fc8-9b5f5df69e61": {
-    "connectionParameters": {
-      "sku": "Enterprise"
-    },
-    "connectionRef": {
-      "displayName": "testAPI",
-      "iconUri": "https://az787822.vo.msecnd.net/defaulticons/api-dedicated.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_testapi-5f783a911adcfbc875-5fd0b8579e069f9298"
-    },
-    "datasets": {},
-    "dataSources": [],
-    "dependencies": {},
-    "dependents": [
-      "54719ed9-5221-4c8e-9e24-b6a369145ad1"
-    ],
-    "id": "f07f4eff-30be-447f-9fc8-9b5f5df69e61"
+    "id": "cf4d312d-cb3d-4035-9902-68b34e5d7d88"
   }
 }

@@ -10,6 +10,11 @@
         <property name="EmployeeCreate_salary" type="integer" />
         <property name="EmployeeCreate_age" type="integer" />
       </object>
+      <string name="ResponseActionOutput_data_def" />
+      <object name="ResponseActionOutput">
+        <property name="data" type="string" />
+      </object>
+      <object name="Run_responses_default_def" />
     </jsonTypes>
   </grammars>
   <resources siena:authenticationProviderHref="#PowerAppAuth" base="https://unitedstates-002.azure-apim.net/apim/logicflows">
@@ -27,6 +32,9 @@
             <param style="plain" name="EmployeeCreate_age" path="/EmployeeCreate_age" type="xs:int" required="true" />
           </representation>
         </request>
+        <response>
+          <representation mediaType="application/json" element="service:ResponseActionOutput" />
+        </response>
       </method>
     </resource>
   </resources>
