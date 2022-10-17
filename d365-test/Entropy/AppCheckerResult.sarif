@@ -63,7 +63,7 @@
                   "charLength": 79,
                   "charOffset": 105,
                   "snippet": {
-                    "text": "Set(ApiResponse,SaveEmployee.Run(txtName.Text,txtSalary.Text,txtAge.Text).data)"
+                    "text": "Set(apiResponse,SaveEmployee.Run(txtName.Text,txtSalary.Text,txtAge.Text).data)"
                   }
                 }
               },
@@ -627,17 +627,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.ApiResponse"
+                  "fullyQualifiedName": "App.apiResponse"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.ApiResponse",
+                  "fullyQualifiedName": "App.apiResponse",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "ApiResponse",
+                "member": "apiResponse",
                 "module": "App",
                 "type": "App"
               }
