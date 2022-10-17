@@ -53,9 +53,17 @@ FormPost As screen:
     Button1 As button:
         OnSelect: |-
             =Set(employeeData,{employee_name:txtName.Text,employee_salary:txtSalary.Text,employee_age:txtAge.Text});
-            SaveEmployee.Run(txtName.Text,txtSalary.Text,txtAge.Text);
+            Set(ApiResponse,SaveEmployee.Run(txtName.Text,txtSalary.Text,txtAge.Text).data);
         Text: ="Save"
         X: =147
         Y: =315
         ZIndex: =7
+
+    Label16 As label:
+        Height: =380
+        Text: ="Text"
+        Width: =368
+        X: =740
+        Y: =62
+        ZIndex: =8
 
