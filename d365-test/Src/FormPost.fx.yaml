@@ -61,7 +61,7 @@ FormPost As screen:
 
     Label16 As label:
         Height: =380
-        Text: =apiResponse.data
+        Text: =apiResponse
         Width: =368
         X: =740
         Y: =62
