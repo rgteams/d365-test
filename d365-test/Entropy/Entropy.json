@@ -89,13 +89,13 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "10/17/2022 09:50:19",
+  "HeaderLastSavedDateTimeUTC": "10/17/2022 09:50:45",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
-    "1a8871b3-2937-4e45-aa22-5f1288bcae4b": "\"/providers/microsoft.powerapps/apis/shared_bhn-20rewards-20api-5f783a911adcfbc875-5fd0b8579e069f9298/connections/3f0c3a9220eb4f8c975abe75b80df525\"",
-    "526396e2-d3a2-4eb8-8064-9f26b78cabcf": "\"/providers/microsoft.powerapps/apis/shared_office365users/connections/03af4ebfa6de4b25be910e9b72e7fa38\"",
-    "54719ed9-5221-4c8e-9e24-b6a369145ad1": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/a36e322061ea4e2691a303313de42dfa-8be86cc19283f10b\"",
-    "f07f4eff-30be-447f-9fc8-9b5f5df69e61": "\"/providers/microsoft.powerapps/apis/shared_testapi-5f783a911adcfbc875-5fd0b8579e069f9298/connections/0a0e5d536ddf438598cf153a92657a76\""
+    "1a8871b3-2937-4e45-aa22-5f1288bcae4b": "\"/providers/microsoft.powerapps/apis/shared_bhn-20rewards-20api-5f783a911adcfbc875-5fd0b8579e069f9298/connections/e40f61dbe910419e9f599d06949a3252\"",
+    "526396e2-d3a2-4eb8-8064-9f26b78cabcf": "\"/providers/microsoft.powerapps/apis/shared_office365users/connections/814247f9855646f3b04bfd839ffc0acf\"",
+    "54719ed9-5221-4c8e-9e24-b6a369145ad1": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/d2f8ef432372443985c95e27d38b4472\"",
+    "f07f4eff-30be-447f-9fc8-9b5f5df69e61": "\"/providers/microsoft.powerapps/apis/shared_testapi-5f783a911adcfbc875-5fd0b8579e069f9298/connections/b114773b60a04d30b2f5201e9df1c23f\""
   },
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {},
@@ -358,7 +358,7 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.4761355,
+    "AnalysisLoadTime": 0.4788122,
     "ControlCount": {
       "button": 1,
       "circle": 3,
@@ -377,7 +377,7 @@
       "screen": 4,
       "text": 4
     },
-    "DeserializationLoadTime": 1.945575,
+    "DeserializationLoadTime": 2.9134051,
     "ErrorCount": 2
   },
   "WasLocalDatabaseReferencesEmpty": false
